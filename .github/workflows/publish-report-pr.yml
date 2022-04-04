@@ -1,0 +1,21 @@
+name: Publish report
+on:
+  workflow_dispatch:
+    inputs:
+      artifact_url:
+        description: "URL to the artifact containing new test results."
+        required: true
+      pr_number:
+        required: true
+
+jobs:
+  download_publish_report:
+    name: 'Download and publish API test report from PR'
+    runs-on: ubuntu-18.04
+    env:
+      ARTIFACT_URL: ${{ github.event.inputs.artifact_url }}
+      PR_NUMBER: ${{ github.event.inputs.pr_number }}
+    steps:
+      - name: 'Run script to download and publish report'
+        script: scripts/publish-report-pr.sh
+
