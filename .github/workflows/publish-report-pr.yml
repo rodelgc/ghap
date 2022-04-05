@@ -60,7 +60,9 @@ jobs:
 
       - name: Push changes to repo
         working-directory: ${{ env.REPO_PATH }}
+        env:
+          REPO_URL: https://${{ secrets.TEST_REPORT_TOKEN }}@github.com/${{ github.repository }}
         run: |
           git add .
           git commit -m "Added: Test report of PR $PR_NUMBER, run $RUN_ID."
-          git push
+          git push $REPO_URL
