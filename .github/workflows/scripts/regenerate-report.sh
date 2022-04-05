@@ -6,11 +6,11 @@
 #
 
 # Folder in the repo where new report will be generated.
-PR_REPORT_PATH='$GITHUB_WORKSPACE/repo/pr/$PR_NUMBER'
+PR_REPORT_PATH='$REPO_PATH/pr/$PR_NUMBER'
 
 # Folder in the repo containing all previous files of allure-results.
 # Contents of allure-results folder from the new report will be added here.
-PR_RESULTS_PATH='$GITHUB_WORKSPACE/repo/pr/$PR_NUMBER-results'
+PR_RESULTS_PATH='$REPO_PATH/pr/$PR_NUMBER-results'
 
 if [[ -d "$PR_REPORT_PATH" ]]; then
 
