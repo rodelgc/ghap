@@ -59,8 +59,10 @@ jobs:
         run: allure generate --clean
 
       - name: Push changes to repo
-        uses: actions/checkout@v2
-      - run: |
+        working-directory: ${{ env.REPO_PATH }}
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
           git add .
           git commit -m "Added: Test report of PR $PR_NUMBER, run $RUN_ID."
           git push
