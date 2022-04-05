@@ -52,7 +52,7 @@ jobs:
             --repo woocommerce/woocommerce
 
       - name: Copy downloaded report to repo
-        run: /.github/workflows/scripts/copy-report.sh
+        run: ${{ env.REPO_PATH }}/.github/workflows/scripts/copy-report.sh
 
       - name: Generate report
         working-directory: ${{ env.PR_PATH }}
