@@ -1,21 +1,64 @@
-name: Publish report
+name: Publish test report
 on:
   workflow_dispatch:
     inputs:
-      artifact_url:
-        description: "URL to the artifact containing new test results."
+      run_id:
+        description: Gh Actions workflow run ID containing the test report to be downloaded.
+        required: true
+      artifact_name:
+        description: Name of the artifact to be downloaded.
         required: true
       pr_number:
+        description: WooCommerce PR that generated the test report.
         required: true
 
 jobs:
-  download_publish_report:
-    name: 'Download and publish API test report from PR'
-    runs-on: ubuntu-18.04
+  publish_test_report:
+    name: Publish test report
+    runs-on: ubuntu-latest
     env:
-      ARTIFACT_URL: ${{ github.event.inputs.artifact_url }}
+      RUN_ID: ${{ github.event.inputs.run_id }}
+      ARTIFACT_NAME: ${{ github.event.inputs.artifact_name }}
       PR_NUMBER: ${{ github.event.inputs.pr_number }}
+      DOWNLOAD_PATH: $${{ github.workspace }}/download
+      REPO_PATH: $${{ github.workspace }}/repo
+      PR_PATH: $${{ env.REPO_PATH }}/pr/pr-$${{ env.PR_NUMBER }}
     steps:
-      - name: 'Run script to download and publish report'
-        script: scripts/publish-report-pr.sh
+      - name: Cancel previous runs
+        uses: styfle/cancel-workflow-action@0.7.0
+        with:
+          access_token: ${{ github.token }}
 
+      - name: Create dirs
+        run: |
+          mkdir -p $DOWNLOAD_PATH
+          mkdir -p $REPO_PATH
+
+      - name: Install allure-commandline package
+        run: npm install -g allure-commandline
+
+      - name: Checkout this repo
+        uses: actions/checkout@v2
+        with:
+          path: ${{ env.REPO_PATH }}
+
+      - name: Download test report
+        working-directory: ${{ env.DOWNLOAD_PATH }}
+        run: |
+          gh run download $RUN_ID \
+            --name $ARTIFACT_NAME \
+            --repo woocommerce/woocommerce
+
+      - name: Copy downloaded report to repo
+        run: ./scripts/copy-report.sh
+
+      - name: Generate report
+        working-directory: ${{ env.PR_PATH }}
+        run: allure generate --clean
+
+      - name: Push changes to repo
+        working-directory: ${{ env.REPO_PATH }}
+        run: |
+          git add .
+          git commit -m "Added: Test report of PR $PR_NUMBER, run $RUN_ID."
+          git push
