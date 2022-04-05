@@ -22,7 +22,7 @@ jobs:
       PR_NUMBER: ${{ github.event.inputs.pr_number }}
       DOWNLOAD_PATH: $${{ github.workspace }}/download
       REPO_PATH: $${{ github.workspace }}/repo
-      PR_PATH: $${{ env.REPO_PATH }}/pr/pr-$${{ env.PR_NUMBER }}
+      PR_PATH: $${{ github.workspace }}/repo/pr/pr-${{ github.event.inputs.pr_number }}
     steps:
       - name: Cancel previous runs
         uses: styfle/cancel-workflow-action@0.7.0
