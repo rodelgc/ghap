@@ -44,6 +44,8 @@ jobs:
 
       - name: Download test report
         working-directory: ${{ env.DOWNLOAD_PATH }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           gh run download $RUN_ID \
             --name $ARTIFACT_NAME \
