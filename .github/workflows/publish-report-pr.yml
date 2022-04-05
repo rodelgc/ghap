@@ -60,9 +60,9 @@ jobs:
 
       - name: Push changes to repo
         working-directory: ${{ env.REPO_PATH }}
-        env:
-          REPO_URL: https://${{ github.token }}@github.com/${{ github.repository }}
         run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
           git add .
           git commit -m "Added: Test report of PR $PR_NUMBER, run $RUN_ID."
-          git push $REPO_URL
+          git push
