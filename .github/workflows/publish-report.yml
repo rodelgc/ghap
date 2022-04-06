@@ -1,7 +1,4 @@
 name: Publish test report
-concurrency:
-  group: publish_report
-  cancel-in-progress: false
 on:
   workflow_dispatch:
     inputs:
