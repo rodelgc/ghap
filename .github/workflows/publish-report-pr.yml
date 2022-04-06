@@ -22,11 +22,6 @@ jobs:
       DOWNLOAD_PATH: ${{ github.workspace }}/download
       REPO_PATH: ${{ github.workspace }}/repo
     steps:
-      - name: Cancel previous runs
-        uses: styfle/cancel-workflow-action@0.7.0
-        with:
-          access_token: ${{ github.token }}
-
       - name: Create dirs
         run: |
           mkdir -p $DOWNLOAD_PATH
