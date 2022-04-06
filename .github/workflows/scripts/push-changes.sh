@@ -39,5 +39,5 @@ git config user.name github-actions
 git config user.email github-actions@github.com
 git add .
 git commit -m "$COMMIT_MESSAGE"
-git pull --ff-only
+git pull --rebase
 git push
