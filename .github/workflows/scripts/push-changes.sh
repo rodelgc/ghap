@@ -59,3 +59,5 @@ for i in {1..10}; do
         sleep 10
     fi
 done
+
+exit 0
