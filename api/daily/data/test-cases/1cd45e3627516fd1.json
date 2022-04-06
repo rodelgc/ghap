@@ -1,0 +1,69 @@
+{
+  "uid" : "1cd45e3627516fd1",
+  "name" : "can search by shipping city",
+  "fullName" : "Order Search API tests.can search by shipping city",
+  "historyId" : "2d7555fa04f4b1b0944fb5b8cd5baefc",
+  "time" : {
+    "start" : 1648793155086,
+    "stop" : 1648793155187,
+    "duration" : 101
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Order Search API tests"
+  }, {
+    "name" : "testClass",
+    "value" : "Order Search API tests"
+  }, {
+    "name" : "testMethod",
+    "value" : "can search by shipping city"
+  }, {
+    "name" : "package",
+    "value" : "Order Search API tests"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "f36731f47fc20d00",
+        "status" : "passed",
+        "time" : {
+          "start" : 1648793155086,
+          "stop" : 1648793155187,
+          "duration" : 101
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "1cd45e3627516fd1.json",
+  "parameterValues" : [ ]
+}
