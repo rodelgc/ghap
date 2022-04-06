@@ -41,7 +41,7 @@ jobs:
       GITHUB_TOKEN: ${{ github.token }}
     steps:
       - name: Check if provided PR number is valid
-        if: ${{ github.event.inputs.test_workflow == "pr" }}
+        if: ${{ github.event.inputs.test_workflow == pr }}
         run: gh pr view $PR_NUMBER --repo woocommerce/woocommerce >> /dev/null
 
       - name: Cancel Previous Runs
