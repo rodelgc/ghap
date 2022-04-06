@@ -39,5 +39,23 @@ git config user.name github-actions
 git config user.email github-actions@github.com
 git add .
 git commit -m "$COMMIT_MESSAGE"
-git pull --rebase
-git push
+
+# Retry pulling and pushing changes when it failed due to race condition,
+# like when 2 PR's are trying to push their reports at almost the same time.
+# Retry only for a maximum of 10 tries.
+for i in {1..10}; do
+
+    echo "Attempting to push changes..."
+    
+    git pull --rebase
+    git push
+
+    EXIT_CODE=$(echo $?)
+
+    if [[ $EXIT_CODE -eq 0 ]]; then
+        break
+    else
+        echo "Retrying in 10 sec..."
+        sleep 10
+    fi
+done
