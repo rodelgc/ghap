@@ -2,26 +2,53 @@ name: Publish test report
 on:
   workflow_dispatch:
     inputs:
+      test_workflow:
+        description: Type of workflow that triggered report generation.
+        required: true
+        type: choice
+        options:
+          - daily
+          - pr
+          - release
+      test_type:
+        description: Type of test that generated the report.
+        required: true
+        type: choice
+        options:
+          - e2e
+          - api
       run_id:
-        description: Gh Actions workflow run ID containing the test report to be downloaded.
+        description: Workflow run ID containing the artifact to be downloaded.
         required: true
       artifact_name:
-        description: Name of the artifact to be downloaded.
+        description: Name of artifact to be downloaded.
         required: true
       pr_number:
-        description: WooCommerce PR that generated the test report.
+        description: If test_workflow is 'pr', this is the WooCommerce PR that generated the test report.
 
 jobs:
   publish_test_report:
     name: Publish test report
     runs-on: ubuntu-latest
     env:
+      TEST_WORKFLOW: ${{ github.event.inputs.test_workflow }}
+      TEST_TYPE: ${{ github.event.inputs.test_type }}
       RUN_ID: ${{ github.event.inputs.run_id }}
       ARTIFACT_NAME: ${{ github.event.inputs.artifact_name }}
       PR_NUMBER: ${{ github.event.inputs.pr_number }}
       DOWNLOAD_PATH: ${{ github.workspace }}/download
       REPO_PATH: ${{ github.workspace }}/repo
+      GITHUB_TOKEN: ${{ github.token }}
     steps:
+      - name: Check if provided PR number is valid
+        if: ${{ github.event.inputs.test_workflow == "pr" }}
+        run: gh pr view $PR_NUMBER --repo woocommerce/woocommerce >> /dev/null
+
+      - name: Cancel Previous Runs
+        uses: styfle/cancel-workflow-action@0.7.0
+        with:
+          access_token: ${{ github.token }}
+
       - name: Create dirs
         run: |
           mkdir -p $DOWNLOAD_PATH
@@ -37,8 +64,6 @@ jobs:
 
       - name: Download test report
         working-directory: ${{ env.DOWNLOAD_PATH }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           gh run download $RUN_ID \
             --name $ARTIFACT_NAME \
@@ -48,10 +73,4 @@ jobs:
         run: ${{ env.REPO_PATH }}/.github/workflows/scripts/regenerate-report.sh
 
       - name: Push changes to repo
-        working-directory: ${{ env.REPO_PATH }}
-        run: |
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-          git add .
-          git commit -m "Added: Test report of PR $PR_NUMBER, run $RUN_ID."
-          git push
+        run: ${{ env.REPO_PATH }}/.github/workflows/scripts/push-changes.sh
