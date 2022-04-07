@@ -2,7 +2,7 @@
   "uid" : "b1a8273437954620fa374b796ffaacdd",
   "children" : [ {
     "name" : "defaults",
-    "uid" : "6a0399d1edba6133",
+    "uid" : "3b7bbab1e114793e",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -19,7 +19,7 @@
     "parameters" : [ ]
   }, {
     "name" : "pagination",
-    "uid" : "9ef34cf060345a54",
+    "uid" : "529386e398c657df",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -36,7 +36,7 @@
     "parameters" : [ ]
   }, {
     "name" : "search",
-    "uid" : "dc863d5e3f67b1b",
+    "uid" : "230327fc84b5cfad",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -53,7 +53,7 @@
     "parameters" : [ ]
   }, {
     "name" : "inclusion / exclusion",
-    "uid" : "851168c52c8d53aa",
+    "uid" : "e6f0686190a57bbb",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -70,7 +70,7 @@
     "parameters" : [ ]
   }, {
     "name" : "slug",
-    "uid" : "5003808906563046",
+    "uid" : "f5b818d6325af517",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -87,7 +87,7 @@
     "parameters" : [ ]
   }, {
     "name" : "sku",
-    "uid" : "f5a79305f58ae995",
+    "uid" : "902eb5fa123a3f8a",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -104,7 +104,7 @@
     "parameters" : [ ]
   }, {
     "name" : "type",
-    "uid" : "63389cce546199b3",
+    "uid" : "c7b41761ec9b0b28",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -121,7 +121,7 @@
     "parameters" : [ ]
   }, {
     "name" : "featured",
-    "uid" : "120c9cdc73af1d64",
+    "uid" : "b5a1e25074cde131",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -138,7 +138,7 @@
     "parameters" : [ ]
   }, {
     "name" : "categories",
-    "uid" : "865bf82223fab1df",
+    "uid" : "2ac2916745262afc",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -155,7 +155,7 @@
     "parameters" : [ ]
   }, {
     "name" : "on sale",
-    "uid" : "2bf378cb6f445972",
+    "uid" : "921f608be7eb612b",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -172,7 +172,7 @@
     "parameters" : [ ]
   }, {
     "name" : "price",
-    "uid" : "2dfc3d17308af29a",
+    "uid" : "48322b83b1a303b0",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -189,7 +189,7 @@
     "parameters" : [ ]
   }, {
     "name" : "before / after",
-    "uid" : "987e2c31d12884c7",
+    "uid" : "7638c5718e381e2b",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -206,7 +206,7 @@
     "parameters" : [ ]
   }, {
     "name" : "attributes",
-    "uid" : "4aaaef2869a8d776",
+    "uid" : "f0b2deeb28d57293",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -223,7 +223,7 @@
     "parameters" : [ ]
   }, {
     "name" : "status",
-    "uid" : "efa1ab201665431e",
+    "uid" : "fc257176f79f03c3",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -240,7 +240,7 @@
     "parameters" : [ ]
   }, {
     "name" : "shipping class",
-    "uid" : "2d9a4094f894ae59",
+    "uid" : "1a2f1cd7df6c045",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -257,7 +257,7 @@
     "parameters" : [ ]
   }, {
     "name" : "tax class",
-    "uid" : "604d09b89997c449",
+    "uid" : "381ef4bb87c79cdf",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -274,7 +274,7 @@
     "parameters" : [ ]
   }, {
     "name" : "stock status",
-    "uid" : "428ed448a6c056b4",
+    "uid" : "350ae795de7ae0e1",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -291,7 +291,7 @@
     "parameters" : [ ]
   }, {
     "name" : "tags",
-    "uid" : "db6cc644518136c3",
+    "uid" : "56d8eba892e76f27",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -308,7 +308,7 @@
     "parameters" : [ ]
   }, {
     "name" : "parent",
-    "uid" : "cb1baeb001201a60",
+    "uid" : "d692a38e9761fb80",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -325,7 +325,7 @@
     "parameters" : [ ]
   }, {
     "name" : "default",
-    "uid" : "fd377087d81db4e4",
+    "uid" : "b78565bffa2ee3d9",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -342,7 +342,7 @@
     "parameters" : [ ]
   }, {
     "name" : "date",
-    "uid" : "41a6e2158caf215d",
+    "uid" : "bddb8b44c9303a62",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -359,7 +359,7 @@
     "parameters" : [ ]
   }, {
     "name" : "id",
-    "uid" : "85311e376039bd71",
+    "uid" : "a3a802fdde81275e",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -376,7 +376,7 @@
     "parameters" : [ ]
   }, {
     "name" : "title",
-    "uid" : "ef8db49ce7efcbb5",
+    "uid" : "84c41fcf1723a955",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -393,7 +393,7 @@
     "parameters" : [ ]
   }, {
     "name" : "slug",
-    "uid" : "2bf84480c83d1bc",
+    "uid" : "b2ff14fbd50e00fa",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -410,7 +410,7 @@
     "parameters" : [ ]
   }, {
     "name" : "price",
-    "uid" : "656cb473ecff54b1",
+    "uid" : "3de94ecd60145fdd",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -427,7 +427,7 @@
     "parameters" : [ ]
   }, {
     "name" : "include",
-    "uid" : "b55de3564149f853",
+    "uid" : "f1975fc34b7f9f65",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -444,7 +444,7 @@
     "parameters" : [ ]
   }, {
     "name" : "rating (desc)",
-    "uid" : "c514873ae92bc7a2",
+    "uid" : "e9d7b079e647433a",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -461,7 +461,7 @@
     "parameters" : [ ]
   }, {
     "name" : "rating (asc)",
-    "uid" : "660f07a244113645",
+    "uid" : "2d840d148c0ba865",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "skipped",
     "time" : {
@@ -478,7 +478,7 @@
     "parameters" : [ ]
   }, {
     "name" : "popularity (desc)",
-    "uid" : "257a35766f3c0eb0",
+    "uid" : "4201da108daf4766",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -495,7 +495,7 @@
     "parameters" : [ ]
   }, {
     "name" : "popularity (asc)",
-    "uid" : "174f25aa87d30e5f",
+    "uid" : "334f8d85aa1bc90b",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "skipped",
     "time" : {
@@ -512,7 +512,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can create an order",
-    "uid" : "50f4769259ef2cd8",
+    "uid" : "c95c10564073feaa",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -529,7 +529,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can retrieve an order",
-    "uid" : "86f6f7f54d7792ef",
+    "uid" : "37f78f76a46b48b",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -546,7 +546,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can add shipping and billing contacts to an order",
-    "uid" : "629e4402ad7bd397",
+    "uid" : "fd34863f14c99460",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -563,7 +563,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can permanently delete an order",
-    "uid" : "8b915e1f7a78e4f3",
+    "uid" : "4429dce4ecef76d3",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -580,7 +580,7 @@
     "parameters" : [ ]
   }, {
     "name" : "pagination",
-    "uid" : "90782481977a0c30",
+    "uid" : "bb0846e22dc7e63",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -597,7 +597,7 @@
     "parameters" : [ ]
   }, {
     "name" : "inclusion / exclusion",
-    "uid" : "41206576d03d7735",
+    "uid" : "52e491ed4bb7d6f7",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -614,7 +614,7 @@
     "parameters" : [ ]
   }, {
     "name" : "parent",
-    "uid" : "2ba5edc571e907e4",
+    "uid" : "e38d079bf89ab8f3",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -631,7 +631,7 @@
     "parameters" : [ ]
   }, {
     "name" : "status",
-    "uid" : "c93f17687a96d569",
+    "uid" : "75ea3cee9149adc8",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -648,7 +648,7 @@
     "parameters" : [ ]
   }, {
     "name" : "customer",
-    "uid" : "3e1f904ed528a627",
+    "uid" : "b87e451abc7abe0b",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -665,7 +665,7 @@
     "parameters" : [ ]
   }, {
     "name" : "product",
-    "uid" : "b7e7260a2c18e0bc",
+    "uid" : "9a2d698138d32f2e",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -682,7 +682,7 @@
     "parameters" : [ ]
   }, {
     "name" : "dp (precision)",
-    "uid" : "6f546e7a63590c3b",
+    "uid" : "ac7aed3e91f79c24",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -699,7 +699,7 @@
     "parameters" : [ ]
   }, {
     "name" : "search",
-    "uid" : "ffccd7667a87c585",
+    "uid" : "fd932755aadd4234",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -716,7 +716,7 @@
     "parameters" : [ ]
   }, {
     "name" : "default",
-    "uid" : "58ba7943fa0dc98e",
+    "uid" : "8ab5f7b05672d02",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -733,7 +733,7 @@
     "parameters" : [ ]
   }, {
     "name" : "date",
-    "uid" : "4f9b5a475f462bc8",
+    "uid" : "9a6df7cec00be733",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -750,7 +750,7 @@
     "parameters" : [ ]
   }, {
     "name" : "id",
-    "uid" : "53eaae050630b72a",
+    "uid" : "515c93bf6115a5ce",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -767,7 +767,7 @@
     "parameters" : [ ]
   }, {
     "name" : "include",
-    "uid" : "3faf7935f29c5583",
+    "uid" : "8360957e1540946a",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -784,7 +784,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can create a coupon",
-    "uid" : "8f55fd22193fbf29",
+    "uid" : "d9a7783feaab4708",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -801,7 +801,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can retrieve a coupon",
-    "uid" : "5fd921472ff0033b",
+    "uid" : "d30c35764f1a20b0",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -818,7 +818,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can update a coupon",
-    "uid" : "58c8535c3486d8aa",
+    "uid" : "9b75f268df350ca2",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -835,7 +835,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can permanently delete a coupon",
-    "uid" : "8b3fac32e142b923",
+    "uid" : "222a0aca1bc72f29",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -852,7 +852,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can batch create coupons",
-    "uid" : "7b56a0d074976648",
+    "uid" : "beda284dc9020ab8",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -869,7 +869,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can batch update coupons",
-    "uid" : "c2946f22acd0d072",
+    "uid" : "ae884787c4e492dc",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -886,7 +886,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can batch delete coupons",
-    "uid" : "bf368d8cbef15874",
+    "uid" : "d836ab7ee704a563",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -903,7 +903,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can list all coupons by default",
-    "uid" : "78a7b1db0a807d53",
+    "uid" : "a7a5a033c42e163e",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -920,7 +920,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can limit result set to matching code",
-    "uid" : "bef8605cbd9b5885",
+    "uid" : "420648c5fa6bc14f",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -937,7 +937,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can paginate results",
-    "uid" : "3e88ffa9416d86ec",
+    "uid" : "6d7a39a857a50851",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -954,7 +954,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can limit results to matching string",
-    "uid" : "651c7c5d70632033",
+    "uid" : "8a5c001e94498f7d",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -971,7 +971,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can add coupon to an order",
-    "uid" : "a38c18e412af6119",
+    "uid" : "be9efc99a09d162d",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -988,7 +988,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can add a simple product",
-    "uid" : "5ebff295dbd52e57",
+    "uid" : "ce119f104aadf60f",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -1005,7 +1005,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can add a virtual product",
-    "uid" : "73826c205fd88f52",
+    "uid" : "add6b120fc20dd3d",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -1022,7 +1022,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can add a variable product",
-    "uid" : "99cc4136e919ce4c",
+    "uid" : "c925970b8b871d2c",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -1039,7 +1039,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can view a single product",
-    "uid" : "6f1dc6e5d6c2acd0",
+    "uid" : "d14138ecba36ca61",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -1056,7 +1056,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can update a single product",
-    "uid" : "20e460f9cd17f5f",
+    "uid" : "25db0c799abc9d92",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -1073,7 +1073,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can delete a product",
-    "uid" : "42604140a474be71",
+    "uid" : "c462a801750af354",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -1090,7 +1090,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can batch create products",
-    "uid" : "4ad7ef31cd33b42e",
+    "uid" : "152a65948a75a1e7",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -1107,7 +1107,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can batch update products",
-    "uid" : "9a643b1f42ee4dd1",
+    "uid" : "a016539a9136ccad",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -1124,7 +1124,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can batch delete products",
-    "uid" : "f8f77d8e3052b9a9",
+    "uid" : "d7ba2a9da970e442",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -1141,7 +1141,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can create a pending order by default",
-    "uid" : "cf3ca9f3da540b0e",
+    "uid" : "57a793a7e55ec9b2",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -1158,7 +1158,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can create an order with status 'pending'",
-    "uid" : "be24ffdc6dc6a4c",
+    "uid" : "c42d20b60b5804c2",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -1175,7 +1175,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can create an order with status 'processing'",
-    "uid" : "2aca3b4f7d58073f",
+    "uid" : "167db60c6d4efd09",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -1192,7 +1192,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can create an order with status 'on-hold'",
-    "uid" : "6265ce059b99ce89",
+    "uid" : "cd4e2e1e0264529f",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -1209,7 +1209,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can create an order with status 'completed'",
-    "uid" : "1fc91bc194dfe7ff",
+    "uid" : "eaf8527c08d63bb2",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -1226,7 +1226,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can create an order with status 'cancelled'",
-    "uid" : "38a46cbacda894ba",
+    "uid" : "962f53d893bf457a",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -1243,7 +1243,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can create an order with status 'refunded'",
-    "uid" : "b789cbd80c4ac95e",
+    "uid" : "50cbb0eb91d21054",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -1260,7 +1260,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can create an order with status 'failed'",
-    "uid" : "eb61751464f6392b",
+    "uid" : "8bd449c056582f53",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -1277,7 +1277,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can retrieve an order",
-    "uid" : "f0d5e7a8cb45e1fa",
+    "uid" : "8c7ea7b3691f7c4a",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -1294,7 +1294,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can update status of an order to 'pending'",
-    "uid" : "29ac59897b57fe7a",
+    "uid" : "a064db6ddf0682c",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -1311,7 +1311,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can update status of an order to 'processing'",
-    "uid" : "9ce2a3b2c05f6ab5",
+    "uid" : "6a7297bcdda168e0",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -1328,7 +1328,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can update status of an order to 'on-hold'",
-    "uid" : "c73a70c9562a997f",
+    "uid" : "bf3d1125c7d70483",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -1345,7 +1345,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can update status of an order to 'completed'",
-    "uid" : "13303ec85aef926d",
+    "uid" : "9d86482f6eae1caf",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -1362,7 +1362,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can update status of an order to 'cancelled'",
-    "uid" : "23c28f8178df165d",
+    "uid" : "54922697033aa2c1",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -1379,7 +1379,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can update status of an order to 'refunded'",
-    "uid" : "6ef0a44bb45d810b",
+    "uid" : "fcd000b050192ad2",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -1396,7 +1396,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can update status of an order to 'failed'",
-    "uid" : "93078bba7fd54e0d",
+    "uid" : "49d8e3b0e2fd5d86",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -1413,7 +1413,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can add shipping and billing contacts to an order",
-    "uid" : "8387a2de728f10f3",
+    "uid" : "7199d2ddea0fb66d",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -1430,7 +1430,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can add a product to an order",
-    "uid" : "58d75beda3ab3c0b",
+    "uid" : "84108952a7a53942",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -1447,7 +1447,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can pay for an order",
-    "uid" : "d5a20d22e2263ff",
+    "uid" : "1cf94045522f3cd8",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -1464,7 +1464,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can permanently delete an order",
-    "uid" : "5b466119f906a542",
+    "uid" : "a8bfea9d76f783f",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -1481,7 +1481,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can add complex order",
-    "uid" : "9b447c07ca445619",
+    "uid" : "ccb643f78e442a1d",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -1498,7 +1498,7 @@
     "parameters" : [ ]
   }, {
     "name" : "cannot delete the default shipping zone \"Locations not covered by your other zones\"",
-    "uid" : "83e708670ebf8e8",
+    "uid" : "769479b551b37665",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -1515,7 +1515,7 @@
     "parameters" : [ ]
   }, {
     "name" : "cannot update the default shipping zone",
-    "uid" : "f412df05509a5030",
+    "uid" : "2c8c5fbc68c7befb",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -1532,7 +1532,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can create a shipping zone",
-    "uid" : "c4948f56ad356cdb",
+    "uid" : "c86c75b370b5e496",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -1549,7 +1549,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can retrieve a shipping zone",
-    "uid" : "993fc9d6c2155d69",
+    "uid" : "9b1f1d45c668dafb",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -1566,7 +1566,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can list all shipping zones",
-    "uid" : "349442060c10559e",
+    "uid" : "8fd04807a53fff3b",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -1583,7 +1583,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can update a shipping zone",
-    "uid" : "2e557a71d2a5e0a6",
+    "uid" : "3d55274a3bdf948f",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -1600,7 +1600,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can delete a shipping zone",
-    "uid" : "cd8618d31b598bb6",
+    "uid" : "bb1341046e2de724",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -1617,7 +1617,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can create a refund",
-    "uid" : "4cf7e38116409514",
+    "uid" : "69eaa381a35ead01",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -1634,7 +1634,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can retrieve a refund",
-    "uid" : "d5d1599bb6d749e",
+    "uid" : "edd591d0bbef130",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -1651,7 +1651,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can list all refunds",
-    "uid" : "95d693d4c7da0ba3",
+    "uid" : "218505a4cdd729",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -1668,7 +1668,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can delete a refund",
-    "uid" : "f6a71e7ab9cda503",
+    "uid" : "3e2dceeb69d217d6",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -1685,7 +1685,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can search by orderId",
-    "uid" : "6892c1bf469a7760",
+    "uid" : "d446c10d8ce117d1",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -1702,7 +1702,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can search by billing first name",
-    "uid" : "876aac841f69f625",
+    "uid" : "1f4799de4eebb170",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -1719,7 +1719,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can search by billing company name",
-    "uid" : "9c730c7b3214b3e6",
+    "uid" : "417665c49e37e433",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -1736,7 +1736,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can search by billing address 2",
-    "uid" : "6094c9d4b7c7a4d4",
+    "uid" : "b254606ba48a85fe",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -1753,7 +1753,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can search by billing city name",
-    "uid" : "9706f8ee3c8ad760",
+    "uid" : "49e82171e4fff6db",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -1770,7 +1770,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can search by billing post code",
-    "uid" : "bf563e0cf78ccf61",
+    "uid" : "270c2200073e838b",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -1787,7 +1787,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can search by billing phone",
-    "uid" : "88546752b746c200",
+    "uid" : "e5079f234f56ed3d",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -1804,7 +1804,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can search by billing state",
-    "uid" : "a5fe9ede2b74129",
+    "uid" : "a96d77793903e91f",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -1821,7 +1821,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can search by shipping first name",
-    "uid" : "6593ef49fe9c3999",
+    "uid" : "27f6dc191be98e8a",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -1838,7 +1838,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can search by shipping last name",
-    "uid" : "4db24375862a13d1",
+    "uid" : "ea1a49a4b0d0558c",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -1855,7 +1855,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can search by shipping address 2",
-    "uid" : "b9621f0e5f47bf08",
+    "uid" : "715a721b74bdf772",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -1872,7 +1872,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can search by shipping city",
-    "uid" : "272326f891cb4cef",
+    "uid" : "dc80efed661046e5",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -1889,7 +1889,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can search by shipping post code",
-    "uid" : "8e2d6e846cab9b57",
+    "uid" : "3e90dedf769a77df",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -1906,7 +1906,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can search by shipping state",
-    "uid" : "f8e3928fc6932ffa",
+    "uid" : "90fb8588983b63c4",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -1923,7 +1923,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can return an empty result set when no matches were found",
-    "uid" : "231e1e9ec680c",
+    "uid" : "feaaaa1130d100d6",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -1940,7 +1940,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can add a 'Flat rate' shipping method",
-    "uid" : "f01f5c9f7564c0e4",
+    "uid" : "d97dca568f24a190",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -1957,7 +1957,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can add a 'Free shipping' shipping method",
-    "uid" : "96a4a7fb07844cf9",
+    "uid" : "f8252387899fc475",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -1974,7 +1974,7 @@
     "parameters" : [ ]
   }, {
     "name" : "can add a 'Local pickup' shipping method",
-    "uid" : "61394dd871802a2",
+    "uid" : "952f024305030a8e",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
