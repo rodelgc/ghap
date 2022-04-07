@@ -37,7 +37,7 @@ set_commit_message() {
 set_commit_message
 
 cd $REPO_PATH
-git config user.name "$GH_USER[bot]"
+git config user.name $GH_USER
 git config user.email $GH_EMAIL
 git add .
 git commit -m "$COMMIT_MESSAGE"
