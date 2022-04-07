@@ -41,5 +41,19 @@ git config user.name $GH_USER
 git config user.email $GH_EMAIL
 git add .
 git commit -m "$COMMIT_MESSAGE"
-git pull --rebase
-git push "https://$GH_TOKEN@github.com/$GITHUB_REPOSITORY"
+
+for i in {1..$MAX_PUSH_ATTEMPTS}; do
+    echo "Attempting to push changes..."
+    git pull --rebase
+    git push "https://$GH_TOKEN@github.com/$GITHUB_REPOSITORY"
+    EXIT_CODE=$(echo $?)
+
+    if [[ $EXIT_CODE -eq 0 ]]; then
+        break
+    fi
+
+    if [[ $i -lt $MAX_PUSH_ATTEMPTS ]]; then
+        echo "Retrying in 5 sec..."
+        sleep 5
+    fi
+done
