@@ -62,24 +62,28 @@ set_report_title() {
     sed -i "s/Allure Report/$REPORT_TITLE/g" $REPORT_PATH/widgets/summary.json
 }
 
+combine_new_report_with_existing() {
+    if [[ -f "$REPORT_PATH/index.html" ]]; then
+
+        # The test has previous report.
+        # Combine it with newly downloaded one to create history trend.
+        mkdir -p $DATA_PATH/history
+        cp -r $DOWNLOAD_PATH/allure-report/history/* $DATA_PATH/history
+        cp -r $DOWNLOAD_PATH/allure-results/* $DATA_PATH
+
+    else
+
+        # Create the first report.
+        mkdir -p $REPORT_PATH
+        mkdir -p $DATA_PATH
+        cp -r $DOWNLOAD_PATH/allure-results/* $DATA_PATH
+
+    fi
+}
+
 set_paths
 
-if [[ -f "$REPORT_PATH/index.html" ]]; then
-
-    # The test has previous report.
-    # Combine it with newly downloaded one to create history trend.
-    mkdir -p $DATA_PATH/history
-    cp -r $DOWNLOAD_PATH/allure-report/history/* $DATA_PATH/history
-    cp -r $DOWNLOAD_PATH/allure-results/* $DATA_PATH
-
-else
-
-    # Create the first report.
-    mkdir -p $REPORT_PATH
-    mkdir -p $DATA_PATH
-    cp -r $DOWNLOAD_PATH/allure-results/* $DATA_PATH
-
-fi
+combine_new_report_with_existing
 
 # Regenerate the report.
 allure generate --clean $DATA_PATH --output $REPORT_PATH
