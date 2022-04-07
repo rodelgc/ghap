@@ -41,8 +41,10 @@ git config user.email $GH_EMAIL
 git add .
 git commit -m "$COMMIT_MESSAGE"
 
+# Retry pushing changes up to 5 times when race conditions occur,
+# like when multiple workflows are trying to push to the repo at the same time.
 for i in {1..5}; do
-    echo "Attempting to push changes..."
+    echo "Attempting to push changes (try #$i)..."
     git pull --rebase
     git push "https://$GH_TOKEN@github.com/$GITHUB_REPOSITORY"
     EXIT_CODE=$(echo $?)
