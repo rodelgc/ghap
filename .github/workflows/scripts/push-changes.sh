@@ -41,27 +41,5 @@ git config user.name $GH_USER
 git config user.email $GH_EMAIL
 git add .
 git commit -m "$COMMIT_MESSAGE"
-
-# Retry pulling and pushing changes when it failed due to race condition,
-# like when 2 PR's are trying to push their reports at almost the same time.
-for i in {1..$MAX_PUSH_ATTEMPTS}; do
-
-    echo "Attempting to push changes..."
-    git pull --rebase
-    git push "https://$GH_TOKEN@github.com/$GITHUB_REPOSITORY"
-    EXIT_CODE=$(echo $?)
-
-    # If successful, don't retry.
-    if [[ $EXIT_CODE -eq 0 ]]; then
-        break
-    fi
-
-    # Else, retry.
-    echo "Attempt #$i failed."
-    if [[ $i -lt $MAX_PUSH_ATTEMPTS ]]; then
-        echo "Retrying in 5 sec..."
-        sleep 5
-    fi
-done
-
-exit $EXIT_CODE
+git pull --rebase
+git push "https://$GH_TOKEN@github.com/$GITHUB_REPOSITORY"
