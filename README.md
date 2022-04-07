@@ -1,4 +1,2 @@
-# Home of WooCommerce Core REST API Test Reports
+# Home of WooCommerce Core E2E & API Test Reports
 
-- [Daily builds](./daily/)
-- [Pull requests](./pr/)
