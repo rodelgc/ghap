@@ -6,6 +6,7 @@
 
 COMMIT_MESSAGE=""
 EXIT_CODE=0
+MAX_ATTEMPTS=10
 
 set_commit_message() {
 
@@ -41,9 +42,9 @@ git config user.email $GH_EMAIL
 git add .
 git commit -m "$COMMIT_MESSAGE"
 
-# Retry pushing changes up to 5 times when race conditions occur,
+# Retry pushing changes up to 10 times when race conditions occur,
 # like when multiple workflows are trying to push to the repo at the same time.
-for i in {1..5}; do
+for ((i = 1; i <= $MAX_ATTEMPTS; i++)); do
     echo "Attempting to push changes (try #$i)..."
     git pull --rebase
     git push "https://$GH_TOKEN@github.com/$GITHUB_REPOSITORY"
@@ -53,7 +54,7 @@ for i in {1..5}; do
         break
     fi
 
-    if [[ $i -lt 5 ]]; then
+    if [[ $i -lt $MAX_ATTEMPTS ]]; then
         echo "Retrying in 5 sec..."
         sleep 5
     fi
