@@ -5,7 +5,6 @@
 #
 
 COMMIT_MESSAGE=""
-MAX_PUSH_ATTEMPTS=5
 EXIT_CODE=0
 
 set_commit_message() {
@@ -42,7 +41,7 @@ git config user.email $GH_EMAIL
 git add .
 git commit -m "$COMMIT_MESSAGE"
 
-for i in {1..$MAX_PUSH_ATTEMPTS}; do
+for i in {1..5}; do
     echo "Attempting to push changes..."
     git pull --rebase
     git push "https://$GH_TOKEN@github.com/$GITHUB_REPOSITORY"
@@ -52,7 +51,7 @@ for i in {1..$MAX_PUSH_ATTEMPTS}; do
         break
     fi
 
-    if [[ $i -lt $MAX_PUSH_ATTEMPTS ]]; then
+    if [[ $i -lt 5 ]]; then
         echo "Retrying in 5 sec..."
         sleep 5
     fi
