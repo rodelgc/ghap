@@ -69,6 +69,7 @@ jobs:
 
       - name: Push changes to repo
         env:
-          GH_USER: ${{ secrets.TEST_REPORTS_USERNAME }}
-          GH_EMAIL: ${{ secrets.TEST_REPORTS_EMAIL }}
+          GH_USER: ${{ secrets.REPORTS_USER }}
+          GH_EMAIL: ${{ secrets.REPORTS_EMAIL }}
+          GH_TOKEN: ${{ secrets.REPORTS_TOKEN }}
         run: ${{ env.REPO_PATH }}/.github/workflows/scripts/push-changes.sh

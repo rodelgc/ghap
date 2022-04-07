@@ -48,7 +48,7 @@ for i in {1..$MAX_PUSH_ATTEMPTS}; do
 
     echo "Attempting to push changes..."
     git pull --rebase
-    git push
+    git push "https://$GH_TOKEN@github.com/$GITHUB_REPOSITORY"
     EXIT_CODE=$(echo $?)
 
     # If successful, don't retry.
