@@ -1,0 +1,1171 @@
+[ {
+  "uid" : "4d1ae1497d07839e",
+  "name" : "status",
+  "time" : {
+    "start" : 1648793119496,
+    "stop" : 1648793119681,
+    "duration" : 185
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "86f92fa2614b5a2c",
+  "name" : "defaults",
+  "time" : {
+    "start" : 1648793115950,
+    "stop" : 1648793116122,
+    "duration" : 172
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e42224831b5eab00",
+  "name" : "can paginate results",
+  "time" : {
+    "start" : 1648793141146,
+    "stop" : 1648793141233,
+    "duration" : 87
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "277bf5aaee6ce360",
+  "name" : "tax class",
+  "time" : {
+    "start" : 1648793119772,
+    "stop" : 1648793119864,
+    "duration" : 92
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6c755c89b2e4773f",
+  "name" : "can search by shipping last name",
+  "time" : {
+    "start" : 1648793154908,
+    "stop" : 1648793154993,
+    "duration" : 85
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d3ba306bbf9257fd",
+  "name" : "id",
+  "time" : {
+    "start" : 1648793120559,
+    "stop" : 1648793120814,
+    "duration" : 255
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "629d1e00c6ddd6c5",
+  "name" : "can search by billing post code",
+  "time" : {
+    "start" : 1648793154551,
+    "stop" : 1648793154640,
+    "duration" : 89
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "49e40651d466199e",
+  "name" : "search",
+  "time" : {
+    "start" : 1648793135229,
+    "stop" : 1648793135836,
+    "duration" : 607
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cf0129507a4e3244",
+  "name" : "can retrieve an order",
+  "time" : {
+    "start" : 1648793132459,
+    "stop" : 1648793132549,
+    "duration" : 90
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7121017d1108fe63",
+  "name" : "can add a simple product",
+  "time" : {
+    "start" : 1648793142237,
+    "stop" : 1648793142403,
+    "duration" : 166
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "be4461d0e3b1e7a4",
+  "name" : "pagination",
+  "time" : {
+    "start" : 1648793116122,
+    "stop" : 1648793116679,
+    "duration" : 557
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2331b61d8f570f00",
+  "name" : "default",
+  "time" : {
+    "start" : 1648793120295,
+    "stop" : 1648793120437,
+    "duration" : 142
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c96d1a24499186df",
+  "name" : "can limit results to matching string",
+  "time" : {
+    "start" : 1648793141234,
+    "stop" : 1648793141318,
+    "duration" : 84
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9384052b55a512fa",
+  "name" : "tags",
+  "time" : {
+    "start" : 1648793119954,
+    "stop" : 1648793120053,
+    "duration" : 99
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "10d00c710cbcca6c",
+  "name" : "can create an order with status 'on-hold'",
+  "time" : {
+    "start" : 1648793145159,
+    "stop" : 1648793145485,
+    "duration" : 326
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f112b1c69aa56d9a",
+  "name" : "can delete a product",
+  "time" : {
+    "start" : 1648793143180,
+    "stop" : 1648793143378,
+    "duration" : 198
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "960227cea9b8fc6",
+  "name" : "can update status of an order to 'refunded'",
+  "time" : {
+    "start" : 1648793147557,
+    "stop" : 1648793147662,
+    "duration" : 105
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "72d85fcabebc64e1",
+  "name" : "can permanently delete an order",
+  "time" : {
+    "start" : 1648793148468,
+    "stop" : 1648793148684,
+    "duration" : 216
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d4e202cd0f49ec56",
+  "name" : "can update status of an order to 'failed'",
+  "time" : {
+    "start" : 1648793147662,
+    "stop" : 1648793147775,
+    "duration" : 113
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a37631c99e880a7b",
+  "name" : "rating (asc)",
+  "time" : {
+    "start" : 1648793122153,
+    "stop" : 1648793122153,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "4c306ea547343d1c",
+  "name" : "can list all refunds",
+  "time" : {
+    "start" : 1648793153037,
+    "stop" : 1648793153129,
+    "duration" : 92
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b0e1f1f3f2ab8336",
+  "name" : "can create an order",
+  "time" : {
+    "start" : 1648793132313,
+    "stop" : 1648793132459,
+    "duration" : 146
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ef584a796da94cf2",
+  "name" : "can retrieve a refund",
+  "time" : {
+    "start" : 1648793152951,
+    "stop" : 1648793153037,
+    "duration" : 86
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "93c555d3659df20e",
+  "name" : "can update a shipping zone",
+  "time" : {
+    "start" : 1648793151950,
+    "stop" : 1648793152035,
+    "duration" : 85
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "243dcb4ea89490af",
+  "name" : "can update a single product",
+  "time" : {
+    "start" : 1648793143054,
+    "stop" : 1648793143180,
+    "duration" : 126
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "db5acddb9e8965be",
+  "name" : "include",
+  "time" : {
+    "start" : 1648793136528,
+    "stop" : 1648793136768,
+    "duration" : 240
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d5d9a79360a62abc",
+  "name" : "can update a coupon",
+  "time" : {
+    "start" : 1648793139997,
+    "stop" : 1648793140103,
+    "duration" : 106
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dc096e3f7d8c9baf",
+  "name" : "can add a virtual product",
+  "time" : {
+    "start" : 1648793142403,
+    "stop" : 1648793142682,
+    "duration" : 279
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "786723f888c8b4f3",
+  "name" : "can create a pending order by default",
+  "time" : {
+    "start" : 1648793144402,
+    "stop" : 1648793144591,
+    "duration" : 189
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f00ab58e9b177b32",
+  "name" : "type",
+  "time" : {
+    "start" : 1648793117653,
+    "stop" : 1648793118085,
+    "duration" : 432
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5db86409f413cbd9",
+  "name" : "can return an empty result set when no matches were found",
+  "time" : {
+    "start" : 1648793155367,
+    "stop" : 1648793155450,
+    "duration" : 83
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "63f5b1a701be0827",
+  "name" : "can update status of an order to 'on-hold'",
+  "time" : {
+    "start" : 1648793147177,
+    "stop" : 1648793147294,
+    "duration" : 117
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ad031003d0fdfc40",
+  "name" : "can batch create products",
+  "time" : {
+    "start" : 1648793143379,
+    "stop" : 1648793143582,
+    "duration" : 203
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bd4808cb4f502a38",
+  "name" : "can add a 'Local pickup' shipping method",
+  "time" : {
+    "start" : 1648793156183,
+    "stop" : 1648793156364,
+    "duration" : 181
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b1187415f301f8dd",
+  "name" : "can list all coupons by default",
+  "time" : {
+    "start" : 1648793140961,
+    "stop" : 1648793141053,
+    "duration" : 92
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5fc039c52bbabee6",
+  "name" : "can add a variable product",
+  "time" : {
+    "start" : 1648793142682,
+    "stop" : 1648793142962,
+    "duration" : 280
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "15e01a8b363a3156",
+  "name" : "status",
+  "time" : {
+    "start" : 1648793134239,
+    "stop" : 1648793134513,
+    "duration" : 274
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5cda0eef3fb3ee9b",
+  "name" : "inclusion / exclusion",
+  "time" : {
+    "start" : 1648793116853,
+    "stop" : 1648793117304,
+    "duration" : 451
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3747c5f6b8d7b588",
+  "name" : "can batch update coupons",
+  "time" : {
+    "start" : 1648793140420,
+    "stop" : 1648793140524,
+    "duration" : 104
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "23cc7315a7d6c3af",
+  "name" : "can search by billing state",
+  "time" : {
+    "start" : 1648793154727,
+    "stop" : 1648793154818,
+    "duration" : 91
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a2d012957545a4d",
+  "name" : "can create an order with status 'pending'",
+  "time" : {
+    "start" : 1648793144591,
+    "stop" : 1648793144839,
+    "duration" : 248
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "54c7484f3ee2bfbf",
+  "name" : "can create an order with status 'processing'",
+  "time" : {
+    "start" : 1648793144839,
+    "stop" : 1648793145159,
+    "duration" : 320
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "22239a601a8b7379",
+  "name" : "can add shipping and billing contacts to an order",
+  "time" : {
+    "start" : 1648793147775,
+    "stop" : 1648793147921,
+    "duration" : 146
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7c55cdb9e2b522ea",
+  "name" : "can retrieve a coupon",
+  "time" : {
+    "start" : 1648793139472,
+    "stop" : 1648793139997,
+    "duration" : 525
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4c28ca08f02fa857",
+  "name" : "can limit result set to matching code",
+  "time" : {
+    "start" : 1648793141053,
+    "stop" : 1648793141146,
+    "duration" : 93
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "10195951018b12f9",
+  "name" : "search",
+  "time" : {
+    "start" : 1648793116679,
+    "stop" : 1648793116853,
+    "duration" : 174
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d5d83fa9822d2a44",
+  "name" : "can batch delete coupons",
+  "time" : {
+    "start" : 1648793140524,
+    "stop" : 1648793140818,
+    "duration" : 294
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d554074ab9ae073f",
+  "name" : "can add complex order",
+  "time" : {
+    "start" : 1648793150221,
+    "stop" : 1648793150576,
+    "duration" : 355
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f0f82ff98e8deb3d",
+  "name" : "sku",
+  "time" : {
+    "start" : 1648793117479,
+    "stop" : 1648793117653,
+    "duration" : 174
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "27d21074b1bb6bb7",
+  "name" : "can batch update products",
+  "time" : {
+    "start" : 1648793143582,
+    "stop" : 1648793143749,
+    "duration" : 167
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3d45e07eebf6db18",
+  "name" : "can search by shipping city",
+  "time" : {
+    "start" : 1648793155086,
+    "stop" : 1648793155187,
+    "duration" : 101
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "18989b84fbf3f8e1",
+  "name" : "parent",
+  "time" : {
+    "start" : 1648793120053,
+    "stop" : 1648793120295,
+    "duration" : 242
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "eec3e972d49eb67c",
+  "name" : "before / after",
+  "time" : {
+    "start" : 1648793119184,
+    "stop" : 1648793119393,
+    "duration" : 209
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "abc26c103440d8be",
+  "name" : "can update status of an order to 'cancelled'",
+  "time" : {
+    "start" : 1648793147446,
+    "stop" : 1648793147557,
+    "duration" : 111
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cc5f9631750f790a",
+  "name" : "cannot update the default shipping zone",
+  "time" : {
+    "start" : 1648793151629,
+    "stop" : 1648793151708,
+    "duration" : 79
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "82f9633c5abac2de",
+  "name" : "customer",
+  "time" : {
+    "start" : 1648793134513,
+    "stop" : 1648793134795,
+    "duration" : 282
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e3f0bed95a0b1838",
+  "name" : "can create a coupon",
+  "time" : {
+    "start" : 1648793138715,
+    "stop" : 1648793139472,
+    "duration" : 757
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "330fd0ad7e5885f",
+  "name" : "can batch delete products",
+  "time" : {
+    "start" : 1648793143749,
+    "stop" : 1648793144115,
+    "duration" : 366
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b440063cd0b9be8f",
+  "name" : "product",
+  "time" : {
+    "start" : 1648793134795,
+    "stop" : 1648793134903,
+    "duration" : 108
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3bc43684ff1237d9",
+  "name" : "can permanently delete a coupon",
+  "time" : {
+    "start" : 1648793140104,
+    "stop" : 1648793140290,
+    "duration" : 186
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c24fe5e5aa29f735",
+  "name" : "can search by shipping first name",
+  "time" : {
+    "start" : 1648793154818,
+    "stop" : 1648793154908,
+    "duration" : 90
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b555d4b08890d37d",
+  "name" : "can add shipping and billing contacts to an order",
+  "time" : {
+    "start" : 1648793132549,
+    "stop" : 1648793132663,
+    "duration" : 114
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c6ce62abd9d1c3d2",
+  "name" : "can update status of an order to 'processing'",
+  "time" : {
+    "start" : 1648793147008,
+    "stop" : 1648793147177,
+    "duration" : 169
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "30157440478d344c",
+  "name" : "can permanently delete an order",
+  "time" : {
+    "start" : 1648793132663,
+    "stop" : 1648793132876,
+    "duration" : 213
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "278b3e3e5ba04ad7",
+  "name" : "can update status of an order to 'completed'",
+  "time" : {
+    "start" : 1648793147294,
+    "stop" : 1648793147446,
+    "duration" : 152
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4d200a8fd869b49e",
+  "name" : "can add a 'Flat rate' shipping method",
+  "time" : {
+    "start" : 1648793155817,
+    "stop" : 1648793156007,
+    "duration" : 190
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1b5b3b7c58798a47",
+  "name" : "rating (desc)",
+  "time" : {
+    "start" : 1648793122046,
+    "stop" : 1648793122153,
+    "duration" : 107
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "47db73098ba917e",
+  "name" : "can create an order with status 'failed'",
+  "time" : {
+    "start" : 1648793146387,
+    "stop" : 1648793146675,
+    "duration" : 288
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "216e7753956d7c21",
+  "name" : "can search by shipping state",
+  "time" : {
+    "start" : 1648793155279,
+    "stop" : 1648793155367,
+    "duration" : 88
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a3d8668192d97d09",
+  "name" : "id",
+  "time" : {
+    "start" : 1648793136184,
+    "stop" : 1648793136528,
+    "duration" : 344
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5bd6e71b48bb487f",
+  "name" : "can search by billing first name",
+  "time" : {
+    "start" : 1648793154200,
+    "stop" : 1648793154287,
+    "duration" : 87
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a61c462ddf6adca1",
+  "name" : "shipping class",
+  "time" : {
+    "start" : 1648793119681,
+    "stop" : 1648793119772,
+    "duration" : 91
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e56267357f647000",
+  "name" : "categories",
+  "time" : {
+    "start" : 1648793118342,
+    "stop" : 1648793118593,
+    "duration" : 251
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "29928f4fe2e9d7db",
+  "name" : "can create an order with status 'refunded'",
+  "time" : {
+    "start" : 1648793146091,
+    "stop" : 1648793146387,
+    "duration" : 296
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dbf6896f1d60369a",
+  "name" : "can add coupon to an order",
+  "time" : {
+    "start" : 1648793141546,
+    "stop" : 1648793141729,
+    "duration" : 183
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b34c97704928572e",
+  "name" : "parent",
+  "time" : {
+    "start" : 1648793133962,
+    "stop" : 1648793134239,
+    "duration" : 277
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1c7e4317e4fae620",
+  "name" : "can list all shipping zones",
+  "time" : {
+    "start" : 1648793151867,
+    "stop" : 1648793151950,
+    "duration" : 83
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f3907d20cb81465b",
+  "name" : "can retrieve an order",
+  "time" : {
+    "start" : 1648793146684,
+    "stop" : 1648793146770,
+    "duration" : 86
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "927f36ce92a86c2",
+  "name" : "popularity (desc)",
+  "time" : {
+    "start" : 1648793122153,
+    "stop" : 1648793122257,
+    "duration" : 104
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5067fa8c2a2ed546",
+  "name" : "dp (precision)",
+  "time" : {
+    "start" : 1648793134903,
+    "stop" : 1648793135229,
+    "duration" : 326
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6967322360ccf871",
+  "name" : "can create a shipping zone",
+  "time" : {
+    "start" : 1648793151708,
+    "stop" : 1648793151789,
+    "duration" : 81
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "62c352ae5df3621e",
+  "name" : "can search by orderId",
+  "time" : {
+    "start" : 1648793154111,
+    "stop" : 1648793154200,
+    "duration" : 89
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "aaff04d5d9205671",
+  "name" : "can search by billing address 2",
+  "time" : {
+    "start" : 1648793154375,
+    "stop" : 1648793154460,
+    "duration" : 85
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "44c6d8edfb51087f",
+  "name" : "popularity (asc)",
+  "time" : {
+    "start" : 1648793122257,
+    "stop" : 1648793122257,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "44df292c823dc9e6",
+  "name" : "on sale",
+  "time" : {
+    "start" : 1648793118593,
+    "stop" : 1648793118850,
+    "duration" : 257
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "974491b8f98c1a47",
+  "name" : "can update status of an order to 'pending'",
+  "time" : {
+    "start" : 1648793146914,
+    "stop" : 1648793147008,
+    "duration" : 94
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d05e660fb7629cb5",
+  "name" : "can delete a refund",
+  "time" : {
+    "start" : 1648793153129,
+    "stop" : 1648793153418,
+    "duration" : 289
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3cb82a6f691917cb",
+  "name" : "price",
+  "time" : {
+    "start" : 1648793118850,
+    "stop" : 1648793119184,
+    "duration" : 334
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "aa5264f6d79b6fe4",
+  "name" : "can batch create coupons",
+  "time" : {
+    "start" : 1648793140290,
+    "stop" : 1648793140420,
+    "duration" : 130
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b53550f4b8bb5cd6",
+  "name" : "can add a 'Free shipping' shipping method",
+  "time" : {
+    "start" : 1648793156007,
+    "stop" : 1648793156183,
+    "duration" : 176
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9d38ce0b0f0d023d",
+  "name" : "can search by billing phone",
+  "time" : {
+    "start" : 1648793154640,
+    "stop" : 1648793154727,
+    "duration" : 87
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "27290be240118296",
+  "name" : "can pay for an order",
+  "time" : {
+    "start" : 1648793148061,
+    "stop" : 1648793148331,
+    "duration" : 270
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c11021398c4165fd",
+  "name" : "date",
+  "time" : {
+    "start" : 1648793120437,
+    "stop" : 1648793120559,
+    "duration" : 122
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7755db63c2fc6447",
+  "name" : "title",
+  "time" : {
+    "start" : 1648793120814,
+    "stop" : 1648793121163,
+    "duration" : 349
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9f43c0e362bdfde6",
+  "name" : "can search by billing city name",
+  "time" : {
+    "start" : 1648793154460,
+    "stop" : 1648793154551,
+    "duration" : 91
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a0e42c5dce7ee5cf",
+  "name" : "can create an order with status 'completed'",
+  "time" : {
+    "start" : 1648793145485,
+    "stop" : 1648793145814,
+    "duration" : 329
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c22f0867ffe4b71a",
+  "name" : "slug",
+  "time" : {
+    "start" : 1648793121163,
+    "stop" : 1648793121486,
+    "duration" : 323
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5b0bb07f4e372f6c",
+  "name" : "can search by shipping post code",
+  "time" : {
+    "start" : 1648793155187,
+    "stop" : 1648793155279,
+    "duration" : 92
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "60ee95a14b32f059",
+  "name" : "pagination",
+  "time" : {
+    "start" : 1648793132876,
+    "stop" : 1648793133489,
+    "duration" : 613
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "65339fb825d5678e",
+  "name" : "date",
+  "time" : {
+    "start" : 1648793136012,
+    "stop" : 1648793136184,
+    "duration" : 172
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b2c9c4c50028523b",
+  "name" : "cannot delete the default shipping zone \"Locations not covered by your other zones\"",
+  "time" : {
+    "start" : 1648793151359,
+    "stop" : 1648793151629,
+    "duration" : 270
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4a2fc11f684f3e14",
+  "name" : "can create an order with status 'cancelled'",
+  "time" : {
+    "start" : 1648793145814,
+    "stop" : 1648793146091,
+    "duration" : 277
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e62195fed7001e50",
+  "name" : "can delete a shipping zone",
+  "time" : {
+    "start" : 1648793152035,
+    "stop" : 1648793152217,
+    "duration" : 182
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "be7c8cf68849b5c5",
+  "name" : "can search by billing company name",
+  "time" : {
+    "start" : 1648793154287,
+    "stop" : 1648793154375,
+    "duration" : 88
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bc331ba6b007d796",
+  "name" : "inclusion / exclusion",
+  "time" : {
+    "start" : 1648793133489,
+    "stop" : 1648793133962,
+    "duration" : 473
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "21cd3074ca078f22",
+  "name" : "can add a product to an order",
+  "time" : {
+    "start" : 1648793147921,
+    "stop" : 1648793148061,
+    "duration" : 140
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5170a30b76d3b96e",
+  "name" : "can search by shipping address 2",
+  "time" : {
+    "start" : 1648793154993,
+    "stop" : 1648793155086,
+    "duration" : 93
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5e1a22495430875c",
+  "name" : "slug",
+  "time" : {
+    "start" : 1648793117305,
+    "stop" : 1648793117479,
+    "duration" : 174
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "64ae842a77336a92",
+  "name" : "can retrieve a shipping zone",
+  "time" : {
+    "start" : 1648793151789,
+    "stop" : 1648793151867,
+    "duration" : 78
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "db8879bace63afac",
+  "name" : "include",
+  "time" : {
+    "start" : 1648793121811,
+    "stop" : 1648793122046,
+    "duration" : 235
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1a00e15adaeb33bd",
+  "name" : "featured",
+  "time" : {
+    "start" : 1648793118085,
+    "stop" : 1648793118342,
+    "duration" : 257
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "64e88ed78e39bb42",
+  "name" : "attributes",
+  "time" : {
+    "start" : 1648793119393,
+    "stop" : 1648793119496,
+    "duration" : 103
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f1b1b12093a8d2e0",
+  "name" : "stock status",
+  "time" : {
+    "start" : 1648793119864,
+    "stop" : 1648793119954,
+    "duration" : 90
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "12428c5c99d65b3f",
+  "name" : "can view a single product",
+  "time" : {
+    "start" : 1648793142962,
+    "stop" : 1648793143054,
+    "duration" : 92
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7cf7fab6d27edc0c",
+  "name" : "price",
+  "time" : {
+    "start" : 1648793121486,
+    "stop" : 1648793121811,
+    "duration" : 325
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c76a2bb4fcded8a",
+  "name" : "can create a refund",
+  "time" : {
+    "start" : 1648793152735,
+    "stop" : 1648793152951,
+    "duration" : 216
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b18a454e6732cfe0",
+  "name" : "default",
+  "time" : {
+    "start" : 1648793135836,
+    "stop" : 1648793136012,
+    "duration" : 176
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
