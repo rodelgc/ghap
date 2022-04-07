@@ -40,7 +40,7 @@ jobs:
       REPO_PATH: ${{ github.workspace }}/repo
       GITHUB_TOKEN: ${{ github.token }}
     steps:
-      - name: Check if provided PR number is valid
+      - name: Validate PR number
         if: ${{ github.event.inputs.test_workflow == 'pr' }}
         run: gh pr view $PR_NUMBER --repo woocommerce/woocommerce >> /dev/null
 
