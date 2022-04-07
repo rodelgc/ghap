@@ -37,8 +37,8 @@ set_commit_message() {
 set_commit_message
 
 cd $REPO_PATH
-git config user.name github-actions
-git config user.email github-actions@github.com
+git config user.name $GH_USER
+git config user.email $GH_EMAIL
 git add .
 git commit -m "$COMMIT_MESSAGE"
 
@@ -48,7 +48,7 @@ for i in {1..$MAX_PUSH_ATTEMPTS}; do
 
     echo "Attempting to push changes..."
     git pull --rebase
-    git push
+    git push "https://$GH_TOKEN@github.com/$GITHUB_REPOSITORY"
     EXIT_CODE=$(echo $?)
 
     # If successful, don't retry.
