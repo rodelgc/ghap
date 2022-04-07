@@ -23,7 +23,7 @@ set_paths() {
     REPORT_PATH="$REPORT_ROOT/$TEST_TYPE/$TEST_WORKFLOW"
     DATA_PATH="$DATA_ROOT/$TEST_TYPE/$TEST_WORKFLOW"
 
-    if [[ $TEST_WORKFLOW -eq "pr" ]]; then
+    if [[ $TEST_WORKFLOW == "pr" ]]; then
         REPORT_PATH="$REPORT_PATH/$PR_NUMBER"
         DATA_PATH="$DATA_PATH/$PR_NUMBER"
     fi
