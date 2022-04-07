@@ -2,4 +2,4 @@
 
 - [Daily smoke tests](./daily/)
 - [Releases](./release/)
-- [PR's](./pr/)
+- [Pull requests](./pr/)
