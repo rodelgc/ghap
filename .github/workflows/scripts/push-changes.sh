@@ -5,6 +5,8 @@
 #
 
 COMMIT_MESSAGE=""
+MAX_PUSH_ATTEMPTS=5
+EXIT_CODE=0
 
 set_commit_message() {
 
@@ -19,17 +21,17 @@ set_commit_message() {
 
     case $TEST_WORKFLOW in
     "daily")
-        COMMIT_MESSAGE="$COMMIT_MESSAGE -- Daily build"
+        COMMIT_MESSAGE="$COMMIT_MESSAGE - Daily smoke test"
         ;;
     "pr")
-        COMMIT_MESSAGE="$COMMIT_MESSAGE -- PR $PR_NUMBER"
+        COMMIT_MESSAGE="$COMMIT_MESSAGE - PR $PR_NUMBER"
         ;;
     "release")
-        COMMIT_MESSAGE="$COMMIT_MESSAGE -- Release build"
+        COMMIT_MESSAGE="$COMMIT_MESSAGE - Release"
         ;;
     esac
 
-    COMMIT_MESSAGE="$COMMIT_MESSAGE -- Run $RUN_ID"
+    COMMIT_MESSAGE="$COMMIT_MESSAGE - Run $RUN_ID"
 }
 
 set_commit_message
@@ -42,20 +44,24 @@ git commit -m "$COMMIT_MESSAGE"
 
 # Retry pulling and pushing changes when it failed due to race condition,
 # like when 2 PR's are trying to push their reports at almost the same time.
-# Retry only for a maximum of 10 tries.
-for i in {1..10}; do
+for i in {1..$MAX_PUSH_ATTEMPTS}; do
 
     echo "Attempting to push changes..."
-    
     git pull --rebase
     git push
-
     EXIT_CODE=$(echo $?)
 
+    # If successful, don't retry.
     if [[ $EXIT_CODE -eq 0 ]]; then
         break
-    else
-        echo "Retrying in 10 sec..."
-        sleep 10
+    fi
+
+    # Else, retry.
+    echo "Attempt #$i failed."
+    if [[ $i -lt $MAX_PUSH_ATTEMPTS ]]; then
+        echo "Retrying in 5 sec..."
+        sleep 5
     fi
 done
+
+exit $EXIT_CODE
