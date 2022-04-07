@@ -57,3 +57,5 @@ for i in {1..$MAX_PUSH_ATTEMPTS}; do
         sleep 5
     fi
 done
+
+exit $EXIT_CODE
