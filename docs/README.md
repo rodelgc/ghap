@@ -1,4 +1,8 @@
-# Home of WooCommerce Core Test Reports
+---
+title: WooCommerce Core Test Reports
+---
+
+# {{ page.title }}
 
 - [API](./api/)
     - [Daily smoke tests](./api/daily/)
@@ -9,5 +13,3 @@
     - [Daily smoke tests](./e2e/daily/)
     - [Releases](./e2e/release/)
     - [Pull requests](./e2e/pr/)
-
-{{ site.pages }}
