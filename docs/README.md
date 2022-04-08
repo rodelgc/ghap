@@ -1,8 +1,4 @@
----
-title: WooCommerce Core Test Reports
----
-
-# {{ page.title }}
+# WooCommerce Core Test Reports
 
 - [API](./api/)
     - [Daily smoke tests](./api/daily/)
