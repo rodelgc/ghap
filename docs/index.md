@@ -9,7 +9,7 @@
   - [Releases](./e2e/release/)
   - [Pull requests](./e2e/pr/)
 {% for page in site.pages %}
-   {% if page contains "/e2e/pr/" %}
+   {% if page.url contains "/e2e/pr/" %}
     - [{{ page.url | remove: "/e2e/pr/"}}](.{{ page.url }})
    {% endif %}
 {% endfor %}
