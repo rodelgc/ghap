@@ -4,7 +4,6 @@
     - [Daily smoke tests](./api/daily/)
     - [Releases](./api/release/)
     - [Pull requests](./api/pr/)
-    - {{ site.pages }}
 - [E2E](./e2e/)
     - [Daily smoke tests](./e2e/daily/)
     - [Releases](./e2e/release/)
