@@ -36,11 +36,11 @@ page.url | remove: "/e2e/pr/"}}](.{{ page.url }}) {% endif %} {% endfor %}
             {%- assign pr_num =  dir | remove: "pr" | remove: "e2e" | remove: "api" | remove: "/" -%}
             {%- capture pr_nums_with_dupes -%}{{ pr_nums_with_dupes }},{{ pr_num }}{%- endcapture -%}
           {%- endfor -%}
-          {%- capture unique_pr_nums -%}{{ pr_nums_with_dupes | split: "," | uniq }}{%- endcapture -%}
+          {%- capture unique_pr_nums -%}{{ pr_nums_with_dupes | split: "," | uniq | join: "," | split: "," }}{%- endcapture -%}
           
           <!-- mytodo print variables -->
           <li>pr_nums_with_dupes: {{ pr_nums_with_dupes }}</li>
-          <li>pr_nums_with_dupes: {{ unique_pr_nums }}</li>
+          <li>unique_pr_nums: {{ unique_pr_nums }}</li>
 
           <!-- Add each PR as an <li> -->
           {%- for pr in unique_pr_nums -%}
