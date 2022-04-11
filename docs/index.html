@@ -1,10 +1,7 @@
 ---
 title: WooCommerce Core Test Reports
+layout: default
 ---
-
-{% for page in site.pages %} {% if page.url contains "/e2e/pr/" %} - [{{
-page.url | remove: "/e2e/pr/"}}](.{{ page.url }}) {% endif %} {% endfor %}
-
 <html>
   <head>
     <title>{{ page.title }}</title>
