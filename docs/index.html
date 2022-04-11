@@ -40,6 +40,35 @@ layout: default
           {%- endfor -%}
         </ul>
       </li>
+
+      <!-- mytodo debug -->
+      <li>
+        urls
+        <ul>
+          {%- assign urls = site.pages | map: "url" -%}
+          {%- for u in urls -%}
+          <li>{{ u }}</li>
+          {%- endfor -%}
+        </ul>
+      </li>
+      <li>
+        dirs
+        <ul>
+          {%- assign dirs = site.pages | map: "dir" -%}
+          {%- for d in dirs -%}
+          <li>{{ d }}</li>
+          {%- endfor -%}
+        </ul>
+      </li>
+      <li>
+        paths
+        <ul>
+          {%- assign paths = site.pages | map: "path" -%}
+          {%- for p in paths -%}
+          <li>{{ p }}</li>
+          {%- endfor -%}
+        </ul>
+      </li>
     </ul>
   </body>
 </html>
