@@ -10,17 +10,17 @@ layout: default
   <body>
     <h1>{{ page.title }}</h1>
     <hr />
-    <h4>Daily smoke test reports</h4>
+    <h3>Daily smoke test</h3>
     <ul>
       <li><a href="daily/api">API</a></li>
       <li><a href="daily/e2e">E2E</a></li>
     </ul>
-    <h4>Releases</h4>
+    <h3>Releases</h3>
     <ul>
       <li><a href="release/api">API</a></li>
       <li><a href="release/e2e">E2E</a></li>
     </ul>
-    <h4>Pull requests</h4>
+    <h3>Pull requests</h3>
     <ul>
       <!-- Construct list of PR's based on currently existing directories under the "pr" folder -->
       {%- assign pr_dirs = site.pages | where_exp: "page", "page.dir contains
@@ -33,8 +33,8 @@ layout: default
       <li>
         {{ pr }}
         <ul>
-          <li><a href="pr/{{ pr }}/e2e">e2e</a></li>
-          <li><a href="pr/{{ pr }}/api">api</a></li>
+          <li><a href="pr/{{ pr }}/api">API</a></li>
+          <li><a href="pr/{{ pr }}/e2e">E2E</a></li>
         </ul>
       </li>
       {%- endfor -%}
