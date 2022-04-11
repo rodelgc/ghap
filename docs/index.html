@@ -1,0 +1,42 @@
+---
+title: WooCommerce Core Test Reports
+---
+
+{% for page in site.pages %} {% if page.url contains "/e2e/pr/" %} - [{{
+page.url | remove: "/e2e/pr/"}}](.{{ page.url }}) {% endif %} {% endfor %}
+
+<html>
+  <head>
+    <title>{{ page.title }}</title>
+  </head>
+  <body>
+    <h1>{{ page.title }}</h1>
+    <hr />
+    <ul>
+      <li>
+        <a href="daily">Daily smoke tests</a>
+        <ul>
+          <li><a href="daily/api">API test reports</a></li>
+          <li><a href="daily/e2e">E2E test reports</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="release">Releases</a>
+        <ul>
+          <li><a href="release/api">API test reports</a></li>
+          <li><a href="release/e2e">E2E test reports</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="pr">Pull requests</a>
+        <ul>
+          {%- assign pr_pages = site.pages | where_exp: "page", "page.path contains 'pr'" -%}
+          {%- for page in pr_pages -%}
+            {%- assign link_text =  page | remove: "pr" | remove: "e2e" | remove: "api" | remove: "/" -%}
+            <li><a href="{{ page.path }}">{{ link_text }}</a></li>
+          {%- endfor -%}
+        </ul>
+      </li>
+    </ul>
+  </body>
+</html>
