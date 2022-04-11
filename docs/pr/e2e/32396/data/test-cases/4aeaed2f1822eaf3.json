@@ -1,0 +1,50 @@
+{
+  "uid" : "4aeaed2f1822eaf3",
+  "name" : "product",
+  "fullName" : "Orders API tests List all orders.product",
+  "historyId" : "1449a7effae02783cf8bdbed816fb583",
+  "time" : {
+    "start" : 1649518166997,
+    "stop" : 1649518167102,
+    "duration" : 105
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Orders API tests List all orders"
+  }, {
+    "name" : "testClass",
+    "value" : "Orders API tests List all orders"
+  }, {
+    "name" : "testMethod",
+    "value" : "product"
+  }, {
+    "name" : "package",
+    "value" : "Orders API tests List all orders"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4aeaed2f1822eaf3.json",
+  "parameterValues" : [ ]
+}
