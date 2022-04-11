@@ -30,10 +30,10 @@ page.url | remove: "/e2e/pr/"}}](.{{ page.url }}) {% endif %} {% endfor %}
       <li>
         <a href="pr">Pull requests</a>
         <ul>
-          {%- assign pr_pages = site.pages | where_exp: "page", "page.path contains 'pr'" -%}
-          {%- assign link_texts =  pr_pages.dir | remove: "pr" | remove: "e2e" | remove: "api" | remove: "/" | uniq -%}
-          {%- for text in link_texts -%}
-            <li><a href="pr/{{ text }}">{{ text }}</a></li>
+          {%- assign pr_dirs = site.pages | where_exp: "page", "page.dir contains 'pr'" | map: "dir" | uniq -%}
+          {%- for dir in pr_dirs -%}
+            {%- assign link_text =  dir | remove: "pr" | remove: "e2e" | remove: "api" | remove: "/" -%}
+            <li><a href="pr/{{ link_text }}">{{ link_text }}</a></li>
           {%- endfor -%}
         </ul>
       </li>
