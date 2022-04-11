@@ -34,7 +34,7 @@ page.url | remove: "/e2e/pr/"}}](.{{ page.url }}) {% endif %} {% endfor %}
           {%- assign pr_dirs = site.pages | where_exp: "page", "page.dir contains 'pr'" | map: "dir" -%}
           {%- for dir in pr_dirs -%}
             {%- assign pr_num =  dir | remove: "pr" | remove: "e2e" | remove: "api" | remove: "/" -%}
-            {%- capture pr_nums_with_dupes -%}"{{ pr_nums_with_dupes }},{{ pr_num }}"{%- endcapture -%}
+            {%- capture pr_nums_with_dupes -%}{{ pr_nums_with_dupes }},{{ pr_num }}{%- endcapture -%}
           {%- endfor -%}
           {%- capture unique_pr_nums -%}{{ pr_nums_with_dupes | split: "," | uniq | join: "," }}{%- endcapture -%}
           
