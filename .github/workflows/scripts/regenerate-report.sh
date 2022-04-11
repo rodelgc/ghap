@@ -89,4 +89,7 @@ combine_new_report_with_existing
 # Regenerate the report.
 allure generate --clean $DATA_PATH --output $REPORT_PATH
 
+# Add empty Jekyll front matter to index.html
+sed -i "1s/^/---\n---\n/" "$REPORT_PATH/index.html"
+
 set_report_title
