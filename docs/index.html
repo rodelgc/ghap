@@ -30,20 +30,12 @@ page.url | remove: "/e2e/pr/"}}](.{{ page.url }}) {% endif %} {% endfor %}
       <li>
         <a href="pr">Pull requests</a>
         <ul>
-          <!-- Construct list of PR's -->
+          <!-- Construct list of PR's based on currently existing directories under the "pr" folder -->
           {%- assign pr_dirs = site.pages | where_exp: "page", "page.dir contains 'pr'" | map: "dir" -%}
-          {%- for dir in pr_dirs -%}
-            {%- assign pr_num =  dir | remove: "pr" | remove: "e2e" | remove: "api" | remove: "/" -%}
-            {%- capture pr_nums_with_dupes -%}{{ pr_nums_with_dupes }},{{ pr_num }}{%- endcapture -%}
-          {%- endfor -%}
-          {%- capture unique_pr_nums -%}{{ pr_nums_with_dupes | split: "," | uniq | join: "," | split: "," }}{%- endcapture -%}
-          
-          <!-- mytodo print variables -->
-          <li>pr_nums_with_dupes: {{ pr_nums_with_dupes }}</li>
-          <li>unique_pr_nums: {{ unique_pr_nums }}</li>
+          {%- assign pr_nums =  pr_dirs | remove: "pr" | remove: "e2e" | remove: "api" | remove: "/" | uniq -%}
 
-          <!-- Add each PR as an <li> -->
-          {%- for pr in unique_pr_nums -%}
+          <!-- Add each PR as a <li> -->
+          {%- for pr in pr_nums -%}
             <li><a href="pr/{{ pr }}">{{ pr }}</a></li>
           {%- endfor -%}
         </ul>
