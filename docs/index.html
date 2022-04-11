@@ -30,10 +30,17 @@ page.url | remove: "/e2e/pr/"}}](.{{ page.url }}) {% endif %} {% endfor %}
       <li>
         <a href="pr">Pull requests</a>
         <ul>
-          {%- assign pr_dirs = site.pages | where_exp: "page", "page.dir contains 'pr'" | map: "dir" | uniq -%}
+          <!-- Construct list of PR's -->
+          {%- assign pr_dirs = site.pages | where_exp: "page", "page.dir contains 'pr'" | map: "dir" -%}
           {%- for dir in pr_dirs -%}
-            {%- assign link_text =  dir | remove: "pr" | remove: "e2e" | remove: "api" | remove: "/" -%}
-            <li><a href="pr/{{ link_text }}">{{ link_text }}</a></li>
+            {%- assign pr_num =  dir | remove: "pr" | remove: "e2e" | remove: "api" | remove: "/" -%}
+            {%- capture pr_nums_with_dupes -%}"{{ pr_nums_with_dupes }},{{ pr_num }}"{%- endcapture -%}
+          {%- endfor -%}
+          {%- capture unique_pr_nums}{{ pr_nums_with_dupes | split: "," | uniq | join: "," }}{%- endcapture -%}
+          
+          <!-- Add each PR as an <li> -->
+          {%- for pr in unique_pr_nums -%}
+            <li><a href="pr/{{ pr }}">{{ pr }}</a></li>
           {%- endfor -%}
         </ul>
       </li>
