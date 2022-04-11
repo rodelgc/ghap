@@ -10,65 +10,34 @@ layout: default
   <body>
     <h1>{{ page.title }}</h1>
     <hr />
+    <h4>Daily smoke test reports</h4>
     <ul>
-      <li>
-        <a href="daily">Daily smoke tests</a>
-        <ul>
-          <li><a href="daily/api">API test reports</a></li>
-          <li><a href="daily/e2e">E2E test reports</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="release">Releases</a>
-        <ul>
-          <li><a href="release/api">API test reports</a></li>
-          <li><a href="release/e2e">E2E test reports</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="pr">Pull requests</a>
-        <ul>
-          <!-- Construct list of PR's based on currently existing directories under the "pr" folder -->
-          {%- assign pr_dirs = site.pages | where_exp: "page", "page.dir
-          contains 'pr'" | map: "dir" -%} {%- assign pr_nums = pr_dirs | remove:
-          "pr" | remove: "e2e" | remove: "api" | remove: "/" | remove: "[" |
-          remove: "]" | remove: '"' | split: ", " | uniq -%}
+      <li><a href="daily/api">API</a></li>
+      <li><a href="daily/e2e">E2E</a></li>
+    </ul>
+    <h4>Releases</h4>
+    <ul>
+      <li><a href="release/api">API</a></li>
+      <li><a href="release/e2e">E2E</a></li>
+    </ul>
+    <h4>Pull requests</h4>
+    <ul>
+      <!-- Construct list of PR's based on currently existing directories under the "pr" folder -->
+      {%- assign pr_dirs = site.pages | where_exp: "page", "page.dir contains
+      'pr'" | map: "dir" -%} {%- assign pr_nums = pr_dirs | remove: "pr" |
+      remove: "e2e" | remove: "api" | remove: "/" | remove: "[" | remove: "]" |
+      remove: '"' | split: ", " | uniq -%}
 
-          <!-- Add each PR as a <li> -->
-          {%- for pr in pr_nums -%}
-          <li><a href="pr/{{ pr }}">{{ pr }}</a></li>
-          {%- endfor -%}
-        </ul>
-      </li>
-
-      <!-- mytodo debug -->
+      <!-- Add each PR as a <li> -->
+      {%- for pr in pr_nums -%}
       <li>
-        urls
+        {{ pr }}
         <ul>
-          {%- assign urls = site.pages | map: "url" -%}
-          {%- for u in urls -%}
-          <li>{{ u }}</li>
-          {%- endfor -%}
+          <li><a href="pr/{{ pr }}/e2e">e2e</a></li>
+          <li><a href="pr/{{ pr }}/api">api</a></li>
         </ul>
       </li>
-      <li>
-        dirs
-        <ul>
-          {%- assign dirs = site.pages | map: "dir" -%}
-          {%- for d in dirs -%}
-          <li>{{ d }}</li>
-          {%- endfor -%}
-        </ul>
-      </li>
-      <li>
-        paths
-        <ul>
-          {%- assign paths = site.pages | map: "path" -%}
-          {%- for p in paths -%}
-          <li>{{ p }}</li>
-          {%- endfor -%}
-        </ul>
-      </li>
+      {%- endfor -%}
     </ul>
   </body>
 </html>
