@@ -36,7 +36,7 @@ page.url | remove: "/e2e/pr/"}}](.{{ page.url }}) {% endif %} {% endfor %}
             {%- assign pr_num =  dir | remove: "pr" | remove: "e2e" | remove: "api" | remove: "/" -%}
             {%- capture pr_nums_with_dupes -%}{{ pr_nums_with_dupes }},{{ pr_num }}{%- endcapture -%}
           {%- endfor -%}
-          {%- capture unique_pr_nums -%}{{ pr_nums_with_dupes | split: "," | uniq | join: "," }}{%- endcapture -%}
+          {%- capture unique_pr_nums -%}{{ pr_nums_with_dupes | split: "," | uniq }}{%- endcapture -%}
           
           <!-- Add each PR as an <li> -->
           {%- for pr in unique_pr_nums -%}
