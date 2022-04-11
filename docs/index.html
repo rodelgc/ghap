@@ -32,7 +32,7 @@ page.url | remove: "/e2e/pr/"}}](.{{ page.url }}) {% endif %} {% endfor %}
         <ul>
           <!-- Construct list of PR's based on currently existing directories under the "pr" folder -->
           {%- assign pr_dirs = site.pages | where_exp: "page", "page.dir contains 'pr'" | map: "dir" -%}
-          {%- assign pr_nums =  pr_dirs | remove: "pr" | remove: "e2e" | remove: "api" | remove: "/" | uniq -%}
+          {%- assign pr_nums =  pr_dirs | remove: "pr" | remove: "e2e" | remove: "api" | remove: "/" | split: "," | uniq | compact -%}
 
           <!-- Add each PR as a <li> -->
           {%- for pr in pr_nums -%}
