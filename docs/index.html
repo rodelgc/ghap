@@ -40,7 +40,7 @@ layout: default
         </a>
         <ul>
           <!-- Get all the test types this PR has -->
-          {%- assign pr_test_types = pr_pages_with_this_num | map: "pr_test_type" -%}
+          {%- assign pr_test_types = pr_pages_with_this_num | map: "pr_test_type" | sort -%}
 
           <!-- For each test type, create a list item -->
           {%- for test_type in pr_test_types -%}
