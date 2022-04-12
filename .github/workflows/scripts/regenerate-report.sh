@@ -89,9 +89,10 @@ set_jekyll_front_matter() {
 
     if [[ $TEST_WORKFLOW == "pr" ]]; then
 
-        # Set the "PR_TITLE_ENCODED" Jekyll page variable
+        # Set page variables specific to PR reports
         PR_TITLE_ENCODED=$(gh pr view $PR_NUMBER --repo woocommerce/woocommerce --json title --jq '.title|@uri')
-        sed -i "1s/^/---\npr_number: $PR_NUMBER\npr_title_encoded: \"$PR_TITLE_ENCODED\"\npr_test_type: $TEST_TYPE\n---\n/" "$REPORT_PATH/index.html"
+        LAST_PUBLISHED=$(date +'%Y-%m-%d %T %z')
+        sed -i "1s/^/---\npr_number: $PR_NUMBER\npr_title_encoded: \"$PR_TITLE_ENCODED\"\npr_test_type: $TEST_TYPE\nlast_published: \"$LAST_PUBLISHED\"\n---\n/" "$REPORT_PATH/index.html"
 
     else
 
