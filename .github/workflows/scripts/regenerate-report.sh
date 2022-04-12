@@ -89,7 +89,9 @@ combine_new_report_with_existing
 # Regenerate the report.
 allure generate --clean $DATA_PATH --output $REPORT_PATH
 
-# Add empty Jekyll front matter to index.html
+# Add front matter to index.html.
+# Otherwise, Jekyll will not recognize it as a page, but rather as a static asset only.
+# A consequence is that if it's a test report from a PR, it will not show up on the "Pull requests" section in the homepage.
 sed -i "1s/^/---\n---\n/" "$REPORT_PATH/index.html"
 
 set_report_title
