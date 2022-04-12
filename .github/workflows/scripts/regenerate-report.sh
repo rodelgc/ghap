@@ -82,6 +82,26 @@ combine_new_report_with_existing() {
     fi
 }
 
+# Add front matter to index.html.
+# Otherwise, Jekyll will not recognize it as a page, but rather as a static asset only.
+# A consequence is that if it's a test report from a PR, it will not show up on the "Pull requests" section in the homepage.
+set_jekyll_front_matter() {
+
+    if [[ $TEST_WORKFLOW == "pr" ]]; then
+
+        # Set the "PR_TITLE_ENCODED" Jekyll page variable
+        PR_TITLE_ENCODED=$(gh pr view $PR_NUMBER --repo woocommerce/woocommerce --json title --jq '.title|@uri')
+        sed -i "1s/^/---\npr_number: $PR_NUMBER\npr_title_encoded: $PR_TITLE_ENCODED\npr_test_type: $TEST_TYPE\n---\n/" "$REPORT_PATH/index.html"
+
+    else
+
+        # Just set an empty front matter for now.
+        sed -i "1s/^/---\n---\n/" "$REPORT_PATH/index.html"
+        # mytodo
+    fi
+
+}
+
 set_paths
 
 combine_new_report_with_existing
@@ -89,9 +109,6 @@ combine_new_report_with_existing
 # Regenerate the report.
 allure generate --clean $DATA_PATH --output $REPORT_PATH
 
-# Add front matter to index.html.
-# Otherwise, Jekyll will not recognize it as a page, but rather as a static asset only.
-# A consequence is that if it's a test report from a PR, it will not show up on the "Pull requests" section in the homepage.
-sed -i "1s/^/---\n---\n/" "$REPORT_PATH/index.html"
+set_jekyll_front_matter
 
 set_report_title

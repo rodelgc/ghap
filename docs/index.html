@@ -21,20 +21,36 @@ layout: default
       <li><a href="release/e2e">E2E</a></li>
     </ul>
     <h3>Pull requests</h3>
+    <!-- Create list of PR numbers -->
     <ul>
-      <!-- Construct list of PR's based on currently existing directories under the "pr" folder -->
-      {%- assign pr_dirs = site.pages | where_exp: "page", "page.dir contains
-      'pr'" | map: "dir" -%} {%- assign pr_nums = pr_dirs | remove: "pr" |
-      remove: "e2e" | remove: "api" | remove: "/" | remove: "[" | remove: "]" |
-      remove: '"' | split: ", " | uniq -%}
+      {%- assign pr_pages = site.pages | where_exp: "page", "page.dir contains
+      'pr/'" -%}
+      {%- assign pr_numbers = pr_pages | map: "pr_number" | uniq -%}
+      
+      {%- for pr_num in pr_numbers -%}
+      <!-- Get PR title -->
+      {%- assign pr_page = pr_pages | find: "pr_number", pr_num -%}
+      {%- assign pr_title_encoded = pr_page.pr_title_encoded -%}
 
-      <!-- Add each PR as a <li> -->
-      {%- for pr in pr_nums -%}
+      <!-- Create PR list item using the PR title and number-->
       <li>
-        {{ pr }}
+        {{ pr_title_encoded | url_decode }}
+        <a href="https://github.com/woocommerce/woocommerce/pull/{{ pr_num }}"
+          >#{{ pr_num }}
+        </a>
         <ul>
-          <li><a href="pr/{{ pr }}/api">API</a></li>
-          <li><a href="pr/{{ pr }}/e2e">E2E</a></li>
+          <!-- Get all the test types this PR has -->
+          {%- assign pr_test_types = pr_pages | where: "page.pr_number",
+          pr_number | map: "pr_test_type" -%}
+
+          <!-- For each test type, create a list item -->
+          {%- for test_type in pr_test_types -%}
+          <li>
+            <a href="pr/{{ pr_num }}/{{ test_type }}"
+              >{{ test_type | upcase }}</a
+            >
+          </li>
+          {%- endfor -%}
         </ul>
       </li>
       {%- endfor -%}
