@@ -91,7 +91,7 @@ set_jekyll_front_matter() {
 
         # Set the "PR_TITLE_ENCODED" Jekyll page variable
         PR_TITLE_ENCODED=$(gh pr view $PR_NUMBER --repo woocommerce/woocommerce --json title --jq '.title|@uri')
-        sed -i "1s/^/---\npr_number: $PR_NUMBER\npr_title_encoded: $PR_TITLE_ENCODED\npr_test_type: $TEST_TYPE\n---\n/" "$REPORT_PATH/index.html"
+        sed -i "1s/^/---\npr_number: $PR_NUMBER\npr_title_encoded: \"$PR_TITLE_ENCODED\"\npr_test_type: $TEST_TYPE\n---\n/" "$REPORT_PATH/index.html"
 
     else
 
