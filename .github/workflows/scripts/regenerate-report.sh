@@ -97,7 +97,6 @@ set_jekyll_front_matter() {
 
         # Just set an empty front matter for now.
         sed -i "1s/^/---\n---\n/" "$REPORT_PATH/index.html"
-        # mytodo
     fi
 
 }
