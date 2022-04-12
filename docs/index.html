@@ -25,20 +25,8 @@ layout: default
     <ul>
       {%- assign pr_pages = site.pages | where_exp: "page", "page.url contains
       '/pr/'" -%}
-      {%- assign pr_numbers = pr_pages | map: "pr_number" -%}
+      {%- assign pr_numbers = pr_pages | map: "pr_number" | uniq | compact -%}
             
-      <!-- mytodo remove this -->
-      pr_pages
-      {%- for p in pr_pages -%} 
-      - pr_page.url: {{ p.url }} <br />
-      - pr_page.pr_number: {{ p.pr_number }} <br />
-      {%- endfor -%}
-
-      pr_numbers
-      {%- for pn in pr_numbers -%}
-      - pn: {{ pn }} <br />
-      {%- endfor -%}
-      
       {%- for pr_num in pr_numbers -%}
       <!-- Get PR title -->
       {%- assign pr_pages_with_this_num = pr_pages | where: "pr_number", pr_num -%}
