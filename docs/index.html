@@ -24,7 +24,7 @@ layout: default
     <!-- Create list of PR numbers -->
     <ul>
       {%- assign pr_pages = site.pages | where_exp: "page", "page.dir contains
-      'pr/'" -%}
+      'pr'" -%}
       {%- assign pr_numbers = pr_pages | map: "pr_number" | uniq | compact -%}
       <!-- mytodo remove this -->
       pr_numbers: {{ pr_numbers }} 
