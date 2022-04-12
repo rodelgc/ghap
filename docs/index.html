@@ -29,8 +29,8 @@ layout: default
       
       {%- for pr_num in pr_numbers -%}
       <!-- Get PR title -->
-      {%- assign pr_page = pr_pages | find: "pr_number", pr_num -%}
-      {%- assign pr_title_encoded = pr_page.pr_title_encoded -%}
+      {%- assign pr_pages_with_this_num = pr_pages | where: "pr_number", pr_num -%}
+      {%- assign pr_title_encoded = pr_pages_with_this_num[0].pr_title_encoded -%}
 
       <!-- Create PR list item using the PR title and number-->
       <li>
@@ -40,8 +40,7 @@ layout: default
         </a>
         <ul>
           <!-- Get all the test types this PR has -->
-          {%- assign pr_test_types = pr_pages | where: "page.pr_number",
-          pr_number | map: "pr_test_type" -%}
+          {%- assign pr_test_types = pr_pages_with_this_num | map: "pr_test_type" -%}
 
           <!-- For each test type, create a list item -->
           {%- for test_type in pr_test_types -%}
