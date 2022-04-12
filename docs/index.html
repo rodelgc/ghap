@@ -26,6 +26,8 @@ layout: default
       {%- assign pr_pages = site.pages | where_exp: "page", "page.dir contains
       'pr/'" -%}
       {%- assign pr_numbers = pr_pages | map: "pr_number" | uniq | compact -%}
+      <!-- mytodo remove this -->
+      pr_numbers: {{ pr_numbers }} 
       
       {%- for pr_num in pr_numbers -%}
       <!-- Get PR title -->
@@ -46,7 +48,7 @@ layout: default
           {%- for test_type in pr_test_types -%}
           <li>
             <a href="pr/{{ pr_num }}/{{ test_type }}"
-              >{{ test_type }}</a
+              >{{ test_type | upcase }}</a
             >
           </li>
           {%- endfor -%}
