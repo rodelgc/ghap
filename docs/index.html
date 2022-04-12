@@ -22,16 +22,21 @@ layout: default
     </ul>
     <h3>Pull requests</h3>
     <!-- Create list of PR numbers -->
-    {%- assign pr_pages = site.pages | where_exp: "page", "page.url contains
-    '/pr/'" -%}
     <ul>
-      {%- assign pr_numbers = pr_pages | map: "pr_number" | uniq | compact -%}
+      {%- assign pr_pages = site.pages | where_exp: "page", "page.url contains
+      '/pr/'" -%}
+      {%- assign pr_numbers = pr_pages | map: "pr_number" -%}
+            
       <!-- mytodo remove this -->
-      {%- for p in pr_pages -%}
-      - pr_page url: {{ p.url }}
+      pr_pages
+      {%- for p in pr_pages -%} 
+      - pr_page.url: {{ p.url }} <br />
+      - pr_page.pr_number: {{ p.pr_number }} <br />
       {%- endfor -%}
+
+      pr_numbers
       {%- for pn in pr_numbers -%}
-      - pr_numbers url: {{ pn }}
+      - pn: {{ pn }} <br />
       {%- endfor -%}
       
       {%- for pr_num in pr_numbers -%}
