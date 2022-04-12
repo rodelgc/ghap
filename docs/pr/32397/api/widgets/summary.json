@@ -1,5 +1,5 @@
 {
-  "reportName" : "WooCommerce REST API - PR 32397",
+  "reportName" : "WooCommerce REST API - {{ pr_title_encoded | url_decode }} #32397",
   "testRuns" : [ ],
   "statistic" : {
     "failed" : 0,

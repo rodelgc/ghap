@@ -1,0 +1,69 @@
+{
+  "uid" : "f62c9550080913cc",
+  "name" : "can permanently delete a coupon",
+  "fullName" : "Coupons API tests.can permanently delete a coupon",
+  "historyId" : "32bb0e0261b8a49f56f9da7cea62d31d",
+  "time" : {
+    "start" : 1649518171918,
+    "stop" : 1649518172076,
+    "duration" : 158
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Coupons API tests"
+  }, {
+    "name" : "testClass",
+    "value" : "Coupons API tests"
+  }, {
+    "name" : "testMethod",
+    "value" : "can permanently delete a coupon"
+  }, {
+    "name" : "package",
+    "value" : "Coupons API tests"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "c4078d12277c516c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1649518171918,
+          "stop" : 1649518172076,
+          "duration" : 158
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "f62c9550080913cc.json",
+  "parameterValues" : [ ]
+}
