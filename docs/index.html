@@ -30,7 +30,9 @@ layout: default
       {%- for p in pr_pages -%}
       - pr_page url: {{ p.url }}
       {%- endfor -%}
-      pr_numbers: {{ pr_numbers }} 
+      {%- for pn in pr_numbers -%}
+      - pr_numbers url: {{ pn }}
+      {%- endfor -%}
       
       {%- for pr_num in pr_numbers -%}
       <!-- Get PR title -->
