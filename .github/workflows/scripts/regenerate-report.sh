@@ -49,7 +49,7 @@ set_report_title() {
         REPORT_TITLE="$REPORT_TITLE - Daily smoke test"
         ;;
     "pr")
-        REPORT_TITLE="$REPORT_TITLE - PR $PR_NUMBER"
+        REPORT_TITLE="$REPORT_TITLE - {{ pr_title_encoded | url_decode }} #$PR_NUMBER"
         ;;
     "release")
         REPORT_TITLE="$REPORT_TITLE - Release"
