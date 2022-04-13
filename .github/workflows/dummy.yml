@@ -1,5 +1,5 @@
 name: Dummy workflow
-on: workflow_dispatch
+on: pull_request
 
 jobs:
   run-dummy-job:
@@ -8,5 +8,5 @@ jobs:
     steps:
       - name: Dummy step 1
         env:
-          VALUE: ${{ github.event.pull_request.head.sha }}
+          VALUE: ${{ toJSON(github.event.pull_request) }}
         run: echo $VALUE
