@@ -8,5 +8,5 @@ jobs:
     steps:
       - name: Dummy step 1
         env:
-          VALUE: ${{ github.event.pull_request }}
+          VALUE: ${{ github.event.pull_request.head.sha }}
         run: echo $VALUE
