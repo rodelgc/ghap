@@ -49,7 +49,7 @@ set_report_title() {
         REPORT_TITLE="$REPORT_TITLE - Daily smoke test"
         ;;
     "pr")
-        REPORT_TITLE="$REPORT_TITLE - PR $PR_NUMBER"
+        REPORT_TITLE="$REPORT_TITLE - Pull request #$PR_NUMBER"
         ;;
     "release")
         REPORT_TITLE="$REPORT_TITLE - Release"
@@ -82,6 +82,33 @@ combine_new_report_with_existing() {
     fi
 }
 
+# Add front matter to index.html.
+# Otherwise, Jekyll will not recognize it as a page, but rather as a static asset only.
+# A consequence is that if it's a test report from a PR, it will not show up on the "Pull requests" section in the homepage.
+set_jekyll_front_matter() {
+
+    if [[ $TEST_WORKFLOW == "pr" ]]; then
+
+        # Set page variables specific to PR reports.
+
+        # Get the URL-encoded PR title.
+        # URL encoding ensures special characters in PR titles will not cause any trouble when processed by Jekyll. 
+        PR_TITLE_ENCODED=$(gh pr view $PR_NUMBER --repo woocommerce/woocommerce --json title --jq '.title|@uri')
+        
+        # Variable to be used as basis for sorting the "Pull requests" list in homepage.
+        LAST_PUBLISHED=$(date +'%Y-%m-%d %T %z')
+
+        # Add front matter to index.html.
+        sed -i "1s/^/---\npr_number: $PR_NUMBER\npr_title_encoded: \"$PR_TITLE_ENCODED\"\npr_test_type: $TEST_TYPE\nlast_published: \"$LAST_PUBLISHED\"\n---\n/" "$REPORT_PATH/index.html"
+
+    else
+
+        # Just set an empty front matter for now.
+        sed -i "1s/^/---\n---\n/" "$REPORT_PATH/index.html"
+    fi
+
+}
+
 set_paths
 
 combine_new_report_with_existing
@@ -89,7 +116,6 @@ combine_new_report_with_existing
 # Regenerate the report.
 allure generate --clean $DATA_PATH --output $REPORT_PATH
 
-# Add empty Jekyll front matter to index.html
-sed -i "1s/^/---\n---\n/" "$REPORT_PATH/index.html"
+set_jekyll_front_matter
 
 set_report_title

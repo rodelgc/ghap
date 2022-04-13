@@ -1,0 +1,12 @@
+name: Dummy workflow
+on: pull_request
+
+jobs:
+  run-dummy-job:
+    name: Run dummy job
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dummy step 1
+        env:
+          VALUE: ${{ toJSON(github.event.pull_request) }}
+        run: echo $VALUE
