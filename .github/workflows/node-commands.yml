@@ -15,7 +15,7 @@ jobs:
         env:
           FILE: text.txt
           SEARCH_VALUE: Allure Report
-          REPLACEMENT: "`~!@#$%^&*()_+-=\|[]{}:;'\",./<>?"
+          REPLACEMENT: "`~!@#$%^&*()_+-=\\|[]{}:;'\",./<>?"
         run: node replace-string-in-file.js "$FILE" "$SEARCH_VALUE" "$REPLACEMENT"
 
       - name: Print file contents
