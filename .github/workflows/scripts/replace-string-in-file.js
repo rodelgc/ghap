@@ -1,4 +1,4 @@
-import { readFile, writeFile } from "fs";
+const { readFile, writeFile } = require("fs");
 
 const someFile = "text.txt";
 const replacement = "Merge branch 'trunk' into e2e/rep-gh-pages";
