@@ -1,13 +1,15 @@
 const { readFile, writeFile } = require("fs");
 
-const someFile = "text.txt";
-const replacement = "Merge branch 'trunk' into e2e/rep-gh-pages";
+const args = process.argv.slice(2);
+const someFile = args[0];
+const searchValue = args[1];
+const replacement = args[2];
 
 readFile(someFile, "utf8", (err, fileContent) => {
   if (err) {
     return console.log(err);
   }
-  const newFileContent = fileContent.replace(/Allure Report/g, replacement);
+  const newFileContent = fileContent.replace(searchValue, replacement);
 
   writeFile(someFile, newFileContent, "utf8", (err) => {
     if (err) return console.log(err);

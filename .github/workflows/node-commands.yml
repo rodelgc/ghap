@@ -12,7 +12,11 @@ jobs:
       - name: Replace file contents
         id: step_1
         working-directory: .github/workflows/scripts
-        run: node replace-string-in-file.js
+        env:
+          FILE: "text.txt"
+          SEARCH_VALUE: "Allure Report"
+          REPLACEMENT: "Merge branch 'trunk' into e2e/rep-gh-pages"
+        run: node replace-string-in-file.js $FILE $SEARCH_VALUE $REPLACEMENT
 
       - name: Print file contents
         working-directory: .github/workflows/scripts
