@@ -17,6 +17,6 @@ const replacement = args[2];
 // });
 
 const content = readFileSync(file);
-const newFileContent = content.replace(searchValue, replacement);
+const newFileContent = content.toString().replace(searchValue, replacement);
 
 writeFileSync(file, newFileContent);
