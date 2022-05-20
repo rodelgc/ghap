@@ -1,13 +1,15 @@
 name: Simple dummy workflow
 on: workflow_dispatch
+inputs:
+  flag_value:
+    required: true
+    default: 0
 
 jobs:
   dummy_job:
     name: Dummy job
     runs-on: ubuntu-20.04
-    env:
-      FLAG: 0
     steps:
-      - name: Print non-existing env var
-        if: env.FLAG
+      - name: Print flag value
+        if: Boolean(github.event.inputs.flag_value)
         run: echo $FLAG
