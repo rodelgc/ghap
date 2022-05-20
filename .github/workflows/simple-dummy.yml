@@ -15,5 +15,5 @@ jobs:
       - name: Print flag value
         env:
           FLAG: ${{ github.event.inputs.flag_value }}
-        if: env.FLAG == true
+        if: ${{ env.FLAG }}
         run: echo $FLAG
