@@ -13,5 +13,5 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - name: Print flag value
-        if: Boolean(github.event.inputs.flag_value)
+        if: ${{ Boolean(github.event.inputs.flag_value) }}
         run: echo $FLAG
