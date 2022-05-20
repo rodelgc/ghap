@@ -5,7 +5,9 @@ jobs:
   dummy_job:
     name: Dummy job
     runs-on: ubuntu-20.04
+    env:
+      FLAG: true
     steps:
       - name: Print non-existing env var
-        if: env.MY_VAR
-        run: echo $MY_VAR
+        if: env.FLAG
+        run: echo $FLAG
