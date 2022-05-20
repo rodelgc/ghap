@@ -1,10 +1,11 @@
 name: Simple dummy workflow
-on: workflow_dispatch
-inputs:
-  flag_value:
-    description: Flag value
-    required: true
-    default: 0
+on:
+workflow_dispatch:
+  inputs:
+    flag_value:
+      description: Flag value
+      required: true
+      default: 0
 
 jobs:
   dummy_job:
