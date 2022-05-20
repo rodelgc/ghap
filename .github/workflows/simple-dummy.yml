@@ -1,0 +1,11 @@
+name: Simple dummy workflow
+on: workflow_dispatch
+
+jobs:
+  dummy_job:
+    name: Dummy job
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Print non-existing env var
+        if: env.MY_VAR
+        run: echo $MY_VAR
