@@ -11,9 +11,9 @@ jobs:
       - name: Run this step when FLAG is true
         if: env.FLAG
         run: |
-          echo "FLAG = true"
+          echo "FLAG = $FLAG"
 
       - name: Run this step when FLAG is false
         if: ${{ !env.FLAG }}
         run: |
-          echo "FLAG = false"
+          echo "FLAG = $FLAG"
