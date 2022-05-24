@@ -15,10 +15,11 @@ jobs:
 
   dummy_job_2:
     name: Dummy job 2
+    needs: [dummy_job_1]
     runs-on: ubuntu-20.04
     steps:
       - name: Print FLAG value from job 1
         env:
-          FLAG_2: ${{ jobs.job_1.env.FLAG }}
+          FLAG_2: ${{ needs.job_1.env.FLAG }}
         run: |
             echo "FLAG_2 = $FLAG_2"
