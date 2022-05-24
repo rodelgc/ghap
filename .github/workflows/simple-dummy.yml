@@ -2,18 +2,24 @@ name: Simple dummy workflow
 on: push
 
 jobs:
-  dummy_job:
-    name: Dummy job
+  dummy_job_1:
+    name: Dummy job 1
+    id: job_1
     runs-on: ubuntu-20.04
     env:
-      FLAG: false
+      FLAG: Job 1 flag
     steps:
-      - name: Run this step when FLAG is true
-        if: fromJSON(env.FLAG)
+      - name: Print FLAG value
         run: |
           echo "FLAG = $FLAG"
 
-      - name: Run this step when FLAG is false
-        if: ${{ !fromJSON(env.FLAG) }}
-        run: |
-          echo "FLAG = $FLAG"
+  dummy_job_2:
+    name: Dummy job 2
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Print FLAG value from job 1
+        env:
+          FLAG_2: ${{ jobs.job_1.env.FLAG }}
+        steps:
+          run: |
+            echo "FLAG_2 = $FLAG_2"
