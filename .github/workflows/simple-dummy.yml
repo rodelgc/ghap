@@ -19,6 +19,6 @@ jobs:
     steps:
       - name: Print FLAG value from job 1
         env:
-          FLAG_2: ${{ needs.job_1.env.FLAG }}
+          FLAG_2: ${{ needs.dummy_job_1.env.FLAG }}
         run: |
             echo "FLAG_2 = $FLAG_2"
