@@ -6,7 +6,7 @@ jobs:
     name: Dummy job
     runs-on: ubuntu-20.04
     env:
-      FLAG: false
+      FLAG: blah
     steps:
       - name: Run this step when FLAG is true
         if: fromJSON(env.FLAG)
@@ -14,6 +14,6 @@ jobs:
           echo "FLAG = $FLAG"
 
       - name: Run this step when FLAG is false
-        if: !fromJSON(env.FLAG)
+        if: ${{ !fromJSON(env.FLAG) }}
         run: |
           echo "FLAG = $FLAG"
