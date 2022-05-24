@@ -9,7 +9,7 @@ jobs:
       FLAG: ${{ false }}
     steps:
       - name: Run this step when FLAG is true
-        if: env.FLAG
+        if: ${{ env.FLAG }}
         run: |
           echo "FLAG = $FLAG"
 
