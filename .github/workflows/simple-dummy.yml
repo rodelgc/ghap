@@ -1,19 +1,19 @@
 name: Simple dummy workflow
-on:
-  workflow_dispatch:
-    inputs:
-      flag_value:
-        description: Flag value
-        required: true
-        default: 0
+on: push
 
 jobs:
   dummy_job:
     name: Dummy job
     runs-on: ubuntu-20.04
+    env:
+      FLAG: ${{ true }}
     steps:
-      - name: Print flag value
-        env:
-          FLAG: ${{ github.event.inputs.flag_value }}
-        if: env.FLAG == true
-        run: echo $FLAG
+      - name: Run this step when FLAG is true
+        if: env.FLAG
+        run: |
+          echo "FLAG = true"
+
+      - name: Run this step when FLAG is false
+        if: ${{ !env.FLAG }}
+        run: |
+          echo "FLAG = false"
