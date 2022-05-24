@@ -6,14 +6,14 @@ jobs:
     name: Dummy job
     runs-on: ubuntu-20.04
     env:
-      FLAG: ${{ false }}
+      FLAG: ${{ true }}
     steps:
       - name: Run this step when FLAG is true
-        if: env.FLAG == ${{ true }}
+        if: ${{ env.FLAG }}
         run: |
           echo "FLAG = $FLAG"
 
       - name: Run this step when FLAG is false
-        if: env.FLAG == ${{ false }}
+        if: ${{ !env.FLAG }}
         run: |
           echo "FLAG = $FLAG"
