@@ -6,7 +6,7 @@ jobs:
     name: Dummy job
     runs-on: ubuntu-20.04
     env:
-      FLAG: ${{ true }}
+      FLAG: ${{ false }}
     steps:
       - name: Run this step when FLAG is true
         if: env.FLAG
