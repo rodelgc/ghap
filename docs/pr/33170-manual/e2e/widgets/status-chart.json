@@ -1,0 +1,1311 @@
+[ {
+  "uid" : "e47de884ac99b430",
+  "name" : "can update settings",
+  "time" : {
+    "start" : 1653376565307,
+    "stop" : 1653376577336,
+    "duration" : 12029
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "92b560ba94922059",
+  "name" : "can search for order containing \"Clark\" as the shipping last name",
+  "time" : {
+    "start" : 1653376290168,
+    "stop" : 1653376295148,
+    "duration" : 4980
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "26bcf078af9ca291",
+  "name" : "can delete all variations",
+  "time" : {
+    "start" : 1653376054491,
+    "stop" : 1653376062826,
+    "duration" : 8335
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "da5893387c104d76",
+  "name" : "Can load Customers",
+  "time" : {
+    "start" : 1653376409933,
+    "stop" : 1653376414742,
+    "duration" : 4809
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a12a0dbc791a33e3",
+  "name" : "can update order details",
+  "time" : {
+    "start" : 1653376138901,
+    "stop" : 1653376145246,
+    "duration" : 6345
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "741279efb4a58bd6",
+  "name" : "should filter by Cancelled",
+  "time" : {
+    "start" : 1653376379126,
+    "stop" : 1653376383762,
+    "duration" : 4636
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "858da8f8aa1edd50",
+  "name" : "allows customer to benefit from a free Local pickup if in SF",
+  "time" : {
+    "start" : 1653375999322,
+    "stop" : 1653375999362,
+    "duration" : 40
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "574964b8083f65cb",
+  "name" : "Can load Attributes",
+  "time" : {
+    "start" : 1653376458773,
+    "stop" : 1653376463575,
+    "duration" : 4802
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ccfd1fbf123cab4b",
+  "name" : "can search for order containing \"address1\" as the billing first address",
+  "time" : {
+    "start" : 1653376250381,
+    "stop" : 1653376255516,
+    "duration" : 5135
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b62313e05dbe125c",
+  "name" : "can edit downloadable product permissions",
+  "time" : {
+    "start" : 1653376157338,
+    "stop" : 1653376165745,
+    "duration" : 8407
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "405de99918556e38",
+  "name" : "can choose not to install any extensions",
+  "time" : {
+    "start" : 1653375728930,
+    "stop" : 1653375736906,
+    "duration" : 7976
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3d66716de3304ed7",
+  "name" : "should allow a user to remove a section",
+  "time" : {
+    "start" : 1653375771885,
+    "stop" : 1653375777240,
+    "duration" : 5355
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4361adc55aa2c848",
+  "name" : "allows customer to benefit from a free Free shipping if in CA",
+  "time" : {
+    "start" : 1653376000622,
+    "stop" : 1653376000664,
+    "duration" : 42
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "16f657f49073b0ed",
+  "name" : "Saving valid bank account transfer details enables the payment method",
+  "time" : {
+    "start" : 1653375857306,
+    "stop" : 1653375870972,
+    "duration" : 13666
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "3434323b3417753b",
+  "name" : "can search for order containing \"94107\" as the billing post code",
+  "time" : {
+    "start" : 1653376265097,
+    "stop" : 1653376269978,
+    "duration" : 4881
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e1dfe517927a8a16",
+  "name" : "can search for order containing \"Wanted Product\" as the shipping item name",
+  "time" : {
+    "start" : 1653376314835,
+    "stop" : 1653376320613,
+    "duration" : 5778
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4df565a6cbf991c1",
+  "name" : "Can load Status",
+  "time" : {
+    "start" : 1653376432238,
+    "stop" : 1653376438636,
+    "duration" : 6398
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1c6b683a58e6cf11",
+  "name" : "can search for order containing \"Tim\" as the shipping first name",
+  "time" : {
+    "start" : 1653376284944,
+    "stop" : 1653376290168,
+    "duration" : 5224
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bd8cb13ac4bc72b4",
+  "name" : "can delete an issued refund",
+  "time" : {
+    "start" : 1653376214634,
+    "stop" : 1653376219679,
+    "duration" : 5045
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "313bb70b58ce3f92",
+  "name" : "can issue a refund by quantity",
+  "time" : {
+    "start" : 1653376207232,
+    "stop" : 1653376214632,
+    "duration" : 7400
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f7c43da81aca937c",
+  "name" : "can create product, attributes and variations",
+  "time" : {
+    "start" : 1653376024584,
+    "stop" : 1653376038648,
+    "duration" : 14064
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1ac2f463725c061a",
+  "name" : "can search for order containing \"San Francisco\" as the billing city name",
+  "time" : {
+    "start" : 1653376260328,
+    "stop" : 1653376265097,
+    "duration" : 4769
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "22d1873f4f45b128",
+  "name" : "should show error message if you go without providing CSV file",
+  "time" : {
+    "start" : 1653376479977,
+    "stop" : 1653376484212,
+    "duration" : 4235
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c1e4228895eddef5",
+  "name" : "a user should see 3 sections by default - Performance, Charts, and Leaderboards",
+  "time" : {
+    "start" : 1653375767614,
+    "stop" : 1653375771885,
+    "duration" : 4271
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "727c5ab39895f041",
+  "name" : "Can load Home",
+  "time" : {
+    "start" : 1653376393784,
+    "stop" : 1653376404447,
+    "duration" : 10663
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c62b8f72eb18fcbb",
+  "name" : "can search for order containing \"john.doe@example.com\" as the billing email",
+  "time" : {
+    "start" : 1653376269979,
+    "stop" : 1653376274946,
+    "duration" : 4967
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f69759b716202ab7",
+  "name" : "add shipping zone for California with Free shipping",
+  "time" : {
+    "start" : 1653375971178,
+    "stop" : 1653375983941,
+    "duration" : 12763
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "11221c55d7a0bbe9",
+  "name" : "Can load All Products",
+  "time" : {
+    "start" : 1653376438637,
+    "stop" : 1653376443518,
+    "duration" : 4881
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "900526d70c4b27c3",
+  "name" : "can receive new order email",
+  "time" : {
+    "start" : 1653376188295,
+    "stop" : 1653376191427,
+    "duration" : 3132
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a14551d475f88a70",
+  "name" : "should filter by On hold",
+  "time" : {
+    "start" : 1653376368508,
+    "stop" : 1653376374361,
+    "duration" : 5853
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "56a19915ae54119d",
+  "name" : "should load the customer payment page",
+  "time" : {
+    "start" : 1653376106938,
+    "stop" : 1653376111264,
+    "duration" : 4326
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e03d3cfe5e43037e",
+  "name" : "Load wp-admin",
+  "time" : {
+    "start" : 1653375916661,
+    "stop" : 1653375918421,
+    "duration" : 1760
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "82a702329670ed48",
+  "name" : "A user can view the Coupons page without it crashing",
+  "time" : {
+    "start" : 1653375817476,
+    "stop" : 1653375821185,
+    "duration" : 3709
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e95c40837006547f",
+  "name" : "can update settings",
+  "time" : {
+    "start" : 1653376552719,
+    "stop" : 1653376565301,
+    "duration" : 12582
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4059bb6a63cf40ce",
+  "name" : "should filter by Pending payment",
+  "time" : {
+    "start" : 1653376348389,
+    "stop" : 1653376354457,
+    "duration" : 6068
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c505e5c78d972a9e",
+  "name" : "A user can view the Taxes page without it crashing",
+  "time" : {
+    "start" : 1653375821186,
+    "stop" : 1653375824914,
+    "duration" : 3728
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5b7dbb82b590706b",
+  "name" : "Can load Categories",
+  "time" : {
+    "start" : 1653376449425,
+    "stop" : 1653376454136,
+    "duration" : 4711
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9677356d07cace26",
+  "name" : "should allow a user to move a section down",
+  "time" : {
+    "start" : 1653375786276,
+    "stop" : 1653375790547,
+    "duration" : 4271
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bf332eefcc5cb367",
+  "name" : "can upload the CSV file and import products",
+  "time" : {
+    "start" : 1653376506412,
+    "stop" : 1653376518993,
+    "duration" : 12581
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3f5c63b38d3e9f06",
+  "name" : "can complete the business section",
+  "time" : {
+    "start" : 1653375697258,
+    "stop" : 1653375704533,
+    "duration" : 7275
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "45b549d4dc3d5c14",
+  "name" : "can set the variation attributes, bulk edit variations",
+  "time" : {
+    "start" : 1653376038650,
+    "stop" : 1653376054491,
+    "duration" : 15841
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "99134269f290b9b4",
+  "name" : "can manually add a variation",
+  "time" : {
+    "start" : 1653376062826,
+    "stop" : 1653376075847,
+    "duration" : 13021
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6cf6289e2bedfe44",
+  "name" : "can setup shipping",
+  "time" : {
+    "start" : 1653375756574,
+    "stop" : 1653375765543,
+    "duration" : 8969
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "2add871cb1ed2431",
+  "name" : "can search for order by order id",
+  "time" : {
+    "start" : 1653376230277,
+    "stop" : 1653376235826,
+    "duration" : 5549
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dc111ee8b6afde3c",
+  "name" : "can add tax classes",
+  "time" : {
+    "start" : 1653376588764,
+    "stop" : 1653376595281,
+    "duration" : 6517
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ca6ac195d2b36ee8",
+  "name" : "A user can view the Products page without it crashing",
+  "time" : {
+    "start" : 1653375798637,
+    "stop" : 1653375802692,
+    "duration" : 4055
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b7595b03ca6de5cc",
+  "name" : "should filter by Processing",
+  "time" : {
+    "start" : 1653376360863,
+    "stop" : 1653376367902,
+    "duration" : 7039
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "3f470f3b16e5409",
+  "name" : "can add downloadable product permissions to order with product",
+  "time" : {
+    "start" : 1653376151279,
+    "stop" : 1653376157335,
+    "duration" : 6056
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "abf31dd297fdee29",
+  "name" : "can update order status",
+  "time" : {
+    "start" : 1653376133018,
+    "stop" : 1653376138900,
+    "duration" : 5882
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "96b683834d89b201",
+  "name" : "can apply a coupon",
+  "time" : {
+    "start" : 1653376116548,
+    "stop" : 1653376123179,
+    "duration" : 6631
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "591a0ccbde5b99a9",
+  "name" : "can set variation defaults",
+  "time" : {
+    "start" : 1653376086456,
+    "stop" : 1653376094728,
+    "duration" : 8272
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ef8c61aa1abdf502",
+  "name" : "can complete the industry section",
+  "time" : {
+    "start" : 1653375682671,
+    "stop" : 1653375689895,
+    "duration" : 7224
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f09f16a7cbdd0859",
+  "name" : "returns no results for non-existent product search",
+  "time" : {
+    "start" : 1653376547266,
+    "stop" : 1653376552714,
+    "duration" : 5448
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4cc3d3316593ea39",
+  "name" : "can revoke downloadable product permissions",
+  "time" : {
+    "start" : 1653376165746,
+    "stop" : 1653376172125,
+    "duration" : 6379
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "70ad4da32e74cdcf",
+  "name" : "can remove a variation",
+  "time" : {
+    "start" : 1653376094730,
+    "stop" : 1653376103162,
+    "duration" : 8432
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9ac73848ff78dcfe",
+  "name" : "can pay for the order through the customer payment page",
+  "time" : {
+    "start" : 1653376111265,
+    "stop" : 1653376116543,
+    "duration" : 5278
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "501611b76cc8650c",
+  "name" : "can add downloadable product permissions to order without product",
+  "time" : {
+    "start" : 1653376145247,
+    "stop" : 1653376151278,
+    "duration" : 6031
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3902924b4fa78a17",
+  "name" : "can create new order",
+  "time" : {
+    "start" : 1653375936203,
+    "stop" : 1653375944248,
+    "duration" : 8045
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cd41764df1f706ee",
+  "name" : "Can load Coupons",
+  "time" : {
+    "start" : 1653376414744,
+    "stop" : 1653376420678,
+    "duration" : 5934
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a63e3166b20d26ea",
+  "name" : "should filter by All",
+  "time" : {
+    "start" : 1653376333817,
+    "stop" : 1653376347730,
+    "duration" : 13913
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "ecb273ce09448809",
+  "name" : "can set rate settings",
+  "time" : {
+    "start" : 1653376595282,
+    "stop" : 1653376601435,
+    "duration" : 6153
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3ae36ac2459e17b3",
+  "name" : "can enable tax rates and calculations",
+  "time" : {
+    "start" : 1653375675204,
+    "stop" : 1653375680723,
+    "duration" : 5519
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "965d5fec07a8a3d9",
+  "name" : "Can load Settings",
+  "time" : {
+    "start" : 1653376426096,
+    "stop" : 1653376432236,
+    "duration" : 6140
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7f4036291d99b22e",
+  "name" : "can set tax options",
+  "time" : {
+    "start" : 1653376583547,
+    "stop" : 1653376588763,
+    "duration" : 5216
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bc00e45d0d39d067",
+  "name" : "A user can view the coupons overview without it crashing",
+  "time" : {
+    "start" : 1653375834088,
+    "stop" : 1653375837379,
+    "duration" : 3291
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "651c6b599cb51d6e",
+  "name" : "A user can view the Overview page without it crashing",
+  "time" : {
+    "start" : 1653375794820,
+    "stop" : 1653375798636,
+    "duration" : 3816
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "651e4694a248263a",
+  "name" : "can email invoice/order details to customer",
+  "time" : {
+    "start" : 1653376199087,
+    "stop" : 1653376207225,
+    "duration" : 8138
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c8f29bde07bab435",
+  "name" : "should show the customer payment page link on a pending order",
+  "time" : {
+    "start" : 1653376103167,
+    "stop" : 1653376106937,
+    "duration" : 3770
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8ec75573fafa74fc",
+  "name" : "can have a shopper add the simple virtual product to the cart",
+  "time" : {
+    "start" : 1653376010875,
+    "stop" : 1653376013595,
+    "duration" : 2720
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e4cbc4133e642ffa",
+  "name" : "can resend new order notification",
+  "time" : {
+    "start" : 1653376191427,
+    "stop" : 1653376199086,
+    "duration" : 7659
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4674171035b0d2a2",
+  "name" : "can do a partial search for a product",
+  "time" : {
+    "start" : 1653376533633,
+    "stop" : 1653376538958,
+    "duration" : 5325
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1f3497de5b865eb3",
+  "name" : "should not allow downloading a product if download attempts are exceeded",
+  "time" : {
+    "start" : 1653376172128,
+    "stop" : 1653376180332,
+    "duration" : 8204
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3ae652c3335e049",
+  "name" : "Can visit the payment setup task from the homescreen if the setup wizard has been skipped",
+  "time" : {
+    "start" : 1653375837386,
+    "stop" : 1653375844462,
+    "duration" : 7076
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "60b797113be00fa4",
+  "name" : "should filter by Failed",
+  "time" : {
+    "start" : 1653376388658,
+    "stop" : 1653376393773,
+    "duration" : 5115
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4d3bfbe958bb3070",
+  "name" : "A user can view the Revenue page without it crashing",
+  "time" : {
+    "start" : 1653375802693,
+    "stop" : 1653375806339,
+    "duration" : 3646
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1f84727ba3417756",
+  "name" : "can search for order containing \"John\" as the billing first name",
+  "time" : {
+    "start" : 1653376235827,
+    "stop" : 1653376240778,
+    "duration" : 4951
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "28621c20bb028d15",
+  "name" : "should not allow downloading a product if expiration date has passed",
+  "time" : {
+    "start" : 1653376180332,
+    "stop" : 1653376188289,
+    "duration" : 7957
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f8dfb407f67e1289",
+  "name" : "A user can view the Stock page without it crashing",
+  "time" : {
+    "start" : 1653375828373,
+    "stop" : 1653375831337,
+    "duration" : 2964
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a794d99a5381eae2",
+  "name" : "can update order after refunding item without automatic stock adjustment",
+  "time" : {
+    "start" : 1653376219680,
+    "stop" : 1653376230265,
+    "duration" : 10585
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "95e475a493711e03",
+  "name" : "Can load Tags",
+  "time" : {
+    "start" : 1653376454137,
+    "stop" : 1653376458771,
+    "duration" : 4634
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7587e73a1d569446",
+  "name" : "Can load Reports",
+  "time" : {
+    "start" : 1653376420679,
+    "stop" : 1653376426095,
+    "duration" : 5416
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "df995c19c7d6a03b",
+  "name" : "can choose the \"Other\" industry",
+  "time" : {
+    "start" : 1653375722345,
+    "stop" : 1653375728930,
+    "duration" : 6585
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dd63e644ae9ba585",
+  "name" : "A user can view the Downloads page without it crashing",
+  "time" : {
+    "start" : 1653375824914,
+    "stop" : 1653375828373,
+    "duration" : 3459
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "446c30c4e44c34a",
+  "name" : "can enable tax calculation",
+  "time" : {
+    "start" : 1653376577344,
+    "stop" : 1653376583546,
+    "duration" : 6202
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "768ccdb79249ffeb",
+  "name" : "can have a shopper add the simple non-virtual product to the cart",
+  "time" : {
+    "start" : 1653376021255,
+    "stop" : 1653376024576,
+    "duration" : 3321
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "48b3686571d785b0",
+  "name" : "should allow a user to move a section up",
+  "time" : {
+    "start" : 1653375790547,
+    "stop" : 1653375794812,
+    "duration" : 4265
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5c3af62c9fbcf0de",
+  "name" : "A user can view the Categories page without it crashing",
+  "time" : {
+    "start" : 1653375813956,
+    "stop" : 1653375817476,
+    "duration" : 3520
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "85ac0279e234456",
+  "name" : "can create simple non-virtual product",
+  "time" : {
+    "start" : 1653376013595,
+    "stop" : 1653376021254,
+    "duration" : 7659
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "115bc8282dfa68e7",
+  "name" : "add shipping zone for San Francisco with free Local pickup",
+  "time" : {
+    "start" : 1653375958315,
+    "stop" : 1653375971175,
+    "duration" : 12860
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a0904104d6a8b614",
+  "name" : "can search for order containing \"address2\" as the billing second address",
+  "time" : {
+    "start" : 1653376255517,
+    "stop" : 1653376260327,
+    "duration" : 4810
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1ecd91e95d9048a1",
+  "name" : "can complete the product types section",
+  "time" : {
+    "start" : 1653375689896,
+    "stop" : 1653375697256,
+    "duration" : 7360
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f369df28bc816514",
+  "name" : "Enabling cash on delivery enables the payment method",
+  "time" : {
+    "start" : 1653375892741,
+    "stop" : 1653375915118,
+    "duration" : 22377
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "54ae099cff103db7",
+  "name" : "can view a product's details after search",
+  "time" : {
+    "start" : 1653376538960,
+    "stop" : 1653376547264,
+    "duration" : 8304
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1d9f3e3fb9aa0c2c",
+  "name" : "can search for order containing \"123456789\" as the billing phone",
+  "time" : {
+    "start" : 1653376274947,
+    "stop" : 1653376279966,
+    "duration" : 5019
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9db21d6efbe70201",
+  "name" : "allows customer to pay for a Flat rate shipping method",
+  "time" : {
+    "start" : 1653376001940,
+    "stop" : 1653376001984,
+    "duration" : 44
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "9046542d73b77d02",
+  "name" : "can search for order containing \"Oxford Ave\" as the shipping first address",
+  "time" : {
+    "start" : 1653376295149,
+    "stop" : 1653376300016,
+    "duration" : 4867
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "de3007d9cfc0a9ea",
+  "name" : "Load the home page",
+  "time" : {
+    "start" : 1653375915690,
+    "stop" : 1653375916661,
+    "duration" : 971
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "97e4c296dee485a",
+  "name" : "Can load Add New",
+  "time" : {
+    "start" : 1653376443519,
+    "stop" : 1653376449424,
+    "duration" : 5905
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f83fd38d90b3fd1e",
+  "name" : "can unselect all business features and continue",
+  "time" : {
+    "start" : 1653375704534,
+    "stop" : 1653375712785,
+    "duration" : 8251
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8e0a0f8f2eb61d7f",
+  "name" : "can search for order containing \"Automattic\" as the billing company name",
+  "time" : {
+    "start" : 1653376245649,
+    "stop" : 1653376250380,
+    "duration" : 4731
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6735d95b18b0ab2",
+  "name" : "A user can view the Variations page without it crashing",
+  "time" : {
+    "start" : 1653375810281,
+    "stop" : 1653375813955,
+    "duration" : 3674
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "654683592d1a2ebb",
+  "name" : "can complete the theme selection section",
+  "time" : {
+    "start" : 1653375712786,
+    "stop" : 1653375722344,
+    "duration" : 9558
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "175f8ac385d23486",
+  "name" : "can manage stock at variation level",
+  "time" : {
+    "start" : 1653376075848,
+    "stop" : 1653376086455,
+    "duration" : 10607
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8e4470976ed6c6d3",
+  "name" : "can search for order containing \"CA\" as the billing state",
+  "time" : {
+    "start" : 1653376279967,
+    "stop" : 1653376284941,
+    "duration" : 4974
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "285700ee4856066b",
+  "name" : "can add shipping classes",
+  "time" : {
+    "start" : 1653375954126,
+    "stop" : 1653375958306,
+    "duration" : 4180
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "978843d0570eb889",
+  "name" : "should filter by Refunded",
+  "time" : {
+    "start" : 1653376383763,
+    "stop" : 1653376388657,
+    "duration" : 4894
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ffc7db57dba55351",
+  "name" : "can make sure WooCommerce is activated.",
+  "time" : {
+    "start" : 1653375766203,
+    "stop" : 1653375767609,
+    "duration" : 1406
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2a08276710137496",
+  "name" : "Can load Orders",
+  "time" : {
+    "start" : 1653376404450,
+    "stop" : 1653376409933,
+    "duration" : 5483
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "50eebd1e901a21a1",
+  "name" : "can remove tax classes",
+  "time" : {
+    "start" : 1653376601437,
+    "stop" : 1653376606367,
+    "duration" : 4930
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d129088d57421dbe",
+  "name" : "can search for order containing \"Doe\" as the billing last name",
+  "time" : {
+    "start" : 1653376240778,
+    "stop" : 1653376245648,
+    "duration" : 4870
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "defb2887c86ef411",
+  "name" : "can search for order containing \"Linwood Ave\" as the shipping second address",
+  "time" : {
+    "start" : 1653376300017,
+    "stop" : 1653376304895,
+    "duration" : 4878
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7acc306e45194b6",
+  "name" : "should allow a user to add a section back in",
+  "time" : {
+    "start" : 1653375777242,
+    "stop" : 1653375781842,
+    "duration" : 4600
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2bc7847e04734d39",
+  "name" : "can view single order",
+  "time" : {
+    "start" : 1653376127664,
+    "stop" : 1653376133018,
+    "duration" : 5354
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7206daf668f611bb",
+  "name" : "Can load Coupons",
+  "time" : {
+    "start" : 1653376466718,
+    "stop" : 1653376471991,
+    "duration" : 5273
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e64e4d0e43b2576c",
+  "name" : "can override the existing products via CSV import",
+  "time" : {
+    "start" : 1653376518993,
+    "stop" : 1653376533627,
+    "duration" : 14634
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4d5f0a0d2968c980",
+  "name" : "Load customer my account page",
+  "time" : {
+    "start" : 1653375918422,
+    "stop" : 1653375919257,
+    "duration" : 835
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "60aebd56be132a0f",
+  "name" : "can search for order containing \"Buffalo\" as the shipping city name",
+  "time" : {
+    "start" : 1653376304896,
+    "stop" : 1653376309815,
+    "duration" : 4919
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9585c8ac5e6d8bfb",
+  "name" : "Can load Overview",
+  "time" : {
+    "start" : 1653376463575,
+    "stop" : 1653376466717,
+    "duration" : 3142
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "580dda074c83758d",
+  "name" : "can create new coupon",
+  "time" : {
+    "start" : 1653375928580,
+    "stop" : 1653375936176,
+    "duration" : 7596
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "713c1c10948af49f",
+  "name" : "add shipping zone for the US with Flat rate",
+  "time" : {
+    "start" : 1653375983942,
+    "stop" : 1653375996083,
+    "duration" : 12141
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2dc82f8c99c5433a",
+  "name" : "can edit a product and save the changes",
+  "time" : {
+    "start" : 1653376471995,
+    "stop" : 1653376479970,
+    "duration" : 7975
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f2f0a0c40de11b16",
+  "name" : "A user can view the Settings page without it crashing",
+  "time" : {
+    "start" : 1653375831337,
+    "stop" : 1653375834084,
+    "duration" : 2747
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dc26d4455142fa7c",
+  "name" : "can create new complex order with multiple product types & tax classes",
+  "time" : {
+    "start" : 1653375944249,
+    "stop" : 1653375954120,
+    "duration" : 9871
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d6b1bf54b0a07889",
+  "name" : "can configure permalink settings",
+  "time" : {
+    "start" : 1653375680724,
+    "stop" : 1653375682664,
+    "duration" : 1940
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a6c6a51b8bfe7395",
+  "name" : "should filter by Completed",
+  "time" : {
+    "start" : 1653376374362,
+    "stop" : 1653376379124,
+    "duration" : 4762
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "285640c4f98350f3",
+  "name" : "should not display move up for the top, or move down for the bottom section",
+  "time" : {
+    "start" : 1653375781843,
+    "stop" : 1653375786274,
+    "duration" : 4431
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4738961e21db80ee",
+  "name" : "A user can view the Orders page without it crashing",
+  "time" : {
+    "start" : 1653375806339,
+    "stop" : 1653375810279,
+    "duration" : 3940
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ba83d53579ee7786",
+  "name" : "should display the choose payments task, and not the WC Pay task",
+  "time" : {
+    "start" : 1653375736908,
+    "stop" : 1653375748224,
+    "duration" : 11316
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4ebcb191e3e34410",
+  "name" : "can remove a coupon",
+  "time" : {
+    "start" : 1653376123180,
+    "stop" : 1653376127651,
+    "duration" : 4471
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6ca286515dfef2a9",
+  "name" : "can search for order containing \"14201\" as the shipping post code",
+  "time" : {
+    "start" : 1653376309816,
+    "stop" : 1653376314834,
+    "duration" : 5018
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c14525ce69be335c",
+  "name" : "can create simple virtual product",
+  "time" : {
+    "start" : 1653376002564,
+    "stop" : 1653376010875,
+    "duration" : 8311
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

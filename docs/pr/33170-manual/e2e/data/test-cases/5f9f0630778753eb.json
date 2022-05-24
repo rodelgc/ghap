@@ -1,0 +1,121 @@
+{
+  "uid" : "5f9f0630778753eb",
+  "name" : "allows customer to pay for a Flat rate shipping method",
+  "fullName" : "allows customer to pay for a Flat rate shipping method",
+  "historyId" : "Chrome merchant/create-shipping-zones.spec.js Verifies shipping options from customer perspective allows customer to pay for a Flat rate shipping method",
+  "time" : {
+    "start" : 1653376001255,
+    "stop" : 1653376001297,
+    "duration" : 42
+  },
+  "status" : "failed",
+  "statusMessage" : "Request failed with status code 500",
+  "statusTrace" : "\n    at createError (/home/runner/work/woocommerce/woocommerce/node_modules/.pnpm/axios@0.19.2/node_modules/axios/lib/core/createError.js:16:15)\n    at settle (/home/runner/work/woocommerce/woocommerce/node_modules/.pnpm/axios@0.19.2/node_modules/axios/lib/core/settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (/home/runner/work/woocommerce/woocommerce/node_modules/.pnpm/axios@0.19.2/node_modules/axios/lib/adapters/http.js:236:11)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "Request failed with status code 500",
+    "statusTrace" : "\n    at createError (/home/runner/work/woocommerce/woocommerce/node_modules/.pnpm/axios@0.19.2/node_modules/axios/lib/core/createError.js:16:15)\n    at settle (/home/runner/work/woocommerce/woocommerce/node_modules/.pnpm/axios@0.19.2/node_modules/axios/lib/core/settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (/home/runner/work/woocommerce/woocommerce/node_modules/.pnpm/axios@0.19.2/node_modules/axios/lib/adapters/http.js:236:11)",
+    "steps" : [ {
+      "name" : "Before Hooks",
+      "time" : {
+        "start" : 1653376001256
+      },
+      "status" : "unknown",
+      "steps" : [ {
+        "name" : "beforeAll hook",
+        "time" : {
+          "start" : 1653376001257,
+          "stop" : 1653376001273,
+          "duration" : 16
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "After Hooks",
+      "time" : {
+        "start" : 1653376001291,
+        "stop" : 1653376001297,
+        "duration" : 6
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "afterAll hook",
+        "time" : {
+          "start" : 1653376001291,
+          "stop" : 1653376001296,
+          "duration" : 5
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Chrome"
+  }, {
+    "name" : "suite",
+    "value" : "merchant/create-shipping-zones.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Verifies shipping options from customer perspective"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5f9f0630778753eb.json",
+  "parameterValues" : [ ]
+}

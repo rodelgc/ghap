@@ -1,0 +1,173 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "Cannot read properties of null (reading 'constructor')",
+      "children" : [ {
+        "name" : "can setup shipping",
+        "uid" : "6cf6289e2bedfe44",
+        "parentUid" : "f461df284249ef64f2f3a579cea68395",
+        "status" : "failed",
+        "time" : {
+          "start" : 1653375756574,
+          "stop" : 1653375765543,
+          "duration" : 8969
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 1,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f461df284249ef64f2f3a579cea68395"
+    }, {
+      "name" : "expect(received).toHaveText(expected)\n\nExpected string: \"Manage\"\nReceived string: \"\"\nCall log:\n  - expect.toHaveText with timeout 5000ms\n  - waiting for selector \"a:right-of(h3:has-text(\"Direct bank transfer\")) >> nth=0\"\n",
+      "children" : [ {
+        "name" : "Saving valid bank account transfer details enables the payment method",
+        "uid" : "16f657f49073b0ed",
+        "parentUid" : "1279e6d05b98318f5732585dfbac6f8f",
+        "status" : "failed",
+        "time" : {
+          "start" : 1653375857306,
+          "stop" : 1653375870972,
+          "duration" : 13666
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 1,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "1279e6d05b98318f5732585dfbac6f8f"
+    }, {
+      "name" : "Request failed with status code 500",
+      "children" : [ {
+        "name" : "allows customer to benefit from a free Local pickup if in SF",
+        "uid" : "858da8f8aa1edd50",
+        "parentUid" : "b564fd03d3bb0cdaa7e98eb95a9ddcc1",
+        "status" : "failed",
+        "time" : {
+          "start" : 1653375999322,
+          "stop" : 1653375999362,
+          "duration" : 40
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 1,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "allows customer to benefit from a free Free shipping if in CA",
+        "uid" : "4361adc55aa2c848",
+        "parentUid" : "b564fd03d3bb0cdaa7e98eb95a9ddcc1",
+        "status" : "failed",
+        "time" : {
+          "start" : 1653376000622,
+          "stop" : 1653376000664,
+          "duration" : 42
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 1,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "allows customer to pay for a Flat rate shipping method",
+        "uid" : "9db21d6efbe70201",
+        "parentUid" : "b564fd03d3bb0cdaa7e98eb95a9ddcc1",
+        "status" : "failed",
+        "time" : {
+          "start" : 1653376001940,
+          "stop" : 1653376001984,
+          "duration" : 44
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 1,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b564fd03d3bb0cdaa7e98eb95a9ddcc1"
+    }, {
+      "name" : "expect(received).toContainText(expected)\n\nExpected string: \"Pending payment\"\nReceived string: \"Processing\"\nCall log:\n  - expect.toContainText with timeout 5000ms\n  - waiting for selector \"mark.order-status > span >> nth=0\"\n  -   selector resolved to <span>Processing</span>\n  -   unexpected value \"Processing\"\n  -   selector resolved to <span>Processing</span>\n  -   unexpected value \"Processing\"\n  -   selector resolved to <span>Processing</span>\n  -   unexpected value \"Processing\"\n  -   selector resolved to <span>Processing</span>\n  -   unexpected value \"Processing\"\n  -   selector resolved to <span>Processing</span>\n  -   unexpected value \"Processing\"\n  -   selector resolved to <span>Processing</span>\n  -   unexpected value \"Processing\"\n  -   selector resolved to <span>Processing</span>\n  -   unexpected value \"Processing\"\n",
+      "children" : [ {
+        "name" : "should filter by All",
+        "uid" : "a63e3166b20d26ea",
+        "parentUid" : "9e6d318cbf40102001040e6346899e20",
+        "status" : "failed",
+        "time" : {
+          "start" : 1653376333817,
+          "stop" : 1653376347730,
+          "duration" : 13913
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 1,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9e6d318cbf40102001040e6346899e20"
+    }, {
+      "name" : "expect.toContainText: Error: strict mode violation: \"mark.order-status > span\" resolved to 2 elements:\n    1) <span>Processing</span> aka playwright.$(\"#post-101 >> text=Processing\")\n    2) <span>Processing</span> aka playwright.$(\"#post-22 >> text=Processing\")\n\n=========================== logs ===========================\nexpect.toContainText with timeout 5000ms\nwaiting for selector \"mark.order-status > span\"\n  strict mode violation: \"mark.order-status > span\" resolved to 2 elements:\n    1) <span>Processing</span> aka playwright.$(\"#post-101 >> text=Processing\")\n    2) <span>Processing</span> aka playwright.$(\"#post-22 >> text=Processing\")\n\n============================================================",
+      "children" : [ {
+        "name" : "should filter by Processing",
+        "uid" : "b7595b03ca6de5cc",
+        "parentUid" : "b30619ee19a51917fe6f122d491d9384",
+        "status" : "failed",
+        "time" : {
+          "start" : 1653376360863,
+          "stop" : 1653376367902,
+          "duration" : 7039
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 1,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b30619ee19a51917fe6f122d491d9384"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  }, {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "Timeout of 20000ms exceeded.",
+      "children" : [ {
+        "name" : "Enabling cash on delivery enables the payment method",
+        "uid" : "f369df28bc816514",
+        "parentUid" : "6caa4d165ac30a7dc163dd8fb747b159",
+        "status" : "broken",
+        "time" : {
+          "start" : 1653375892741,
+          "stop" : 1653375915118,
+          "duration" : 22377
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 1,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6caa4d165ac30a7dc163dd8fb747b159"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}
