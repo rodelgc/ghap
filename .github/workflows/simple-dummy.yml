@@ -13,3 +13,6 @@ jobs:
 
       - name: Print location
         run: pwd
+
+      - name: Print contents
+        run: ls
