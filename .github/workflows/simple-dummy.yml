@@ -5,14 +5,7 @@ jobs:
   dummy_job_1:
     name: Dummy job 1
     runs-on: ubuntu-20.04
-    env:
-      FLAG: Job 1 flag
     steps:
-      - name: Checkout this repo
-        uses: actions/checkout@v3
+      - name: Print github object
+        run: echo ${{ toJSON(github) }}
 
-      - name: Print location
-        run: pwd
-
-      - name: Print contents
-        run: ls
