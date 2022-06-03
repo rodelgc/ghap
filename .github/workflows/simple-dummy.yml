@@ -6,6 +6,5 @@ jobs:
     name: Dummy job 1
     runs-on: ubuntu-20.04
     steps:
-      - name: Print github object
-        run: echo ${{ toJSON(github) }}
-
+      - name: Test for aws presence
+        run: aws --version
