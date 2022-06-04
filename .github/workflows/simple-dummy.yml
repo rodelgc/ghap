@@ -1,10 +1,30 @@
 name: Simple dummy workflow
-on: push
+on:
+  push:
+    branches:
+      - "trunk"
+  workflow_dispatch:
 
 jobs:
   dummy_job_1:
     name: Dummy job 1
     runs-on: ubuntu-20.04
     steps:
-      - name: Test for aws presence
-        run: aws --version
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          role-to-assume: ${{ secrets.ROLE_ARN }}
+          aws-region: us-east-1
+          role-duration-seconds: ${{ 60 * 10 }}
+
+      - name: Upload dummy folder to bucket
+        run: |
+          mkdir -p dummy-folder-${{ github.sha }}
+          echo ${{ github.sha }} > dummy-folder-${{ github.sha }}/dummy.txt
+          aws s3 sync dummy-folder-${{ github.sha }} ${{ secrets.BUCKET_URL }}
+
+      - name: List contents of dummy folder
+        run: aws s3 ls ${{ secrets.BUCKET_URL }}/dummy-folder-${{ github.sha }}
