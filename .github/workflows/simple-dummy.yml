@@ -23,7 +23,7 @@ jobs:
           role-duration-seconds: 900
 
       - name: Upload dummy folder to bucket
-        run: aws s3 sync ./api-test-report---daily ${{ secrets.BUCKET_URL }}/api-test-report---daily --acl public-read
+        run: aws s3 sync ./api-test-report---daily ${{ secrets.BUCKET_URL }}/api-test-report---daily
 
       - name: List contents of dummy folder
         run: aws s3 ls --recursive ${{ secrets.BUCKET_URL }}
