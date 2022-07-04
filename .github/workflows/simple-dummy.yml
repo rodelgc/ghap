@@ -14,8 +14,8 @@ jobs:
         run: mkdir -p output
 
       - run: |
-          echo ${{ GITHUB_STEP_SUMMARY }}
-          echo "hello world" >> ${{ GITHUB_STEP_SUMMARY }}
-          cp ${{ GITHUB_STEP_SUMMARY }} output
+          echo $GITHUB_STEP_SUMMARY
+          echo "hello world" >> $GITHUB_STEP_SUMMARY
+          cp $GITHUB_STEP_SUMMARY output
 
       - run: ls output
