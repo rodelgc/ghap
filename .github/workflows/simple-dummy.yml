@@ -7,23 +7,15 @@ on:
 
 jobs:
   dummy_job_1:
-    name: Dummy job 1
+    name: Archive job summary
     runs-on: ubuntu-20.04
-    permissions:
-      id-token: write
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
+      - name: Make dir
+        run: mkdir -p output
 
-      - name: Configure AWS Credentials
-        uses: aws-actions/configure-aws-credentials@v1
-        with:
-          role-to-assume: ${{ secrets.ROLE_ARN }}
-          aws-region: us-east-1
-          role-duration-seconds: 900
+      - run: |
+          echo ${{ GITHUB_STEP_SUMMARY }}
+          echo "hello world" >> ${{ GITHUB_STEP_SUMMARY }}
+          cp ${{ GITHUB_STEP_SUMMARY }} output
 
-      - name: Upload dummy folder to bucket
-        run: aws s3 sync docs/daily ${{ secrets.BUCKET_URL }}/docs/daily --acl public-read
-
-      - name: List contents of dummy folder
-        run: aws s3 ls --recursive ${{ secrets.BUCKET_URL }}/docs/daily
+      - run: ls output
