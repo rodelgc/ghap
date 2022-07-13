@@ -8,5 +8,8 @@ jobs:
     name: Job 1
     runs-on: ubuntu-20.04
     steps:
+      - name: Checkout this repo
+        uses: actions/checkout@v3
+        
       - name: Try tree
         run: tree ./
