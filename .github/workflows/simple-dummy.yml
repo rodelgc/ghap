@@ -5,17 +5,15 @@ on:
       - "trunk"
   workflow_dispatch:
 
+env:
+  E2E_PLAYWRIGHT: true
+
 jobs:
-  dummy_job_1:
+  job_1:
     name: Archive job summary
     runs-on: ubuntu-20.04
+
     steps:
-      - name: Make dir
-        run: mkdir -p output
-
-      - run: |
-          echo $GITHUB_STEP_SUMMARY
-          echo "hello world" >> $GITHUB_STEP_SUMMARY
-          cp $GITHUB_STEP_SUMMARY output
-
-      - run: ls output
+      - name: Is true
+        if: fromJSON(env.E2E_PLAYWRIGHT)
+        run: echo "If you see this, it means that E2E_PLAYWRIGHT was set to 'true'"
