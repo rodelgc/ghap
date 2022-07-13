@@ -20,4 +20,4 @@ jobs:
 
       - name: Sync allure-report folder
         run: |
-          aws s3 sync ./docs/daily/api/allure-report ${{ secrets.GHAP_S3_BUCKET_URL }}/try/ghap/allure-report
+          aws s3 sync ./docs/daily/api/allure-report ${{ secrets.GHAP_S3_BUCKET_URL }}/try/ghap/allure-report --delete
