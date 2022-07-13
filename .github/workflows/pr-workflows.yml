@@ -1,8 +1,6 @@
 name: PR workflow
 on:
-  push:
-    branches:
-      - "test-pr-events"
+  pull_request:
   workflow_dispatch:
 
 jobs:
