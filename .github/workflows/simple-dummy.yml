@@ -19,5 +19,5 @@ jobs:
         run: echo "I ran!"
 
       - name: Run if E2E_PLAYWRIGHT is false
-        if: fromJSON(env.E2E_PLAYWRIGHT) != true
+        if: fromJSON(env.E2E_PLAYWRIGHT) != ${{ true }}
         run: echo "I ran!"
