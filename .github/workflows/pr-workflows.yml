@@ -8,7 +8,5 @@ jobs:
     name: Job 1
     runs-on: ubuntu-20.04
     steps:
-      - name: Output full github object
-        env:
-          OBJ: ${{ toJSON(github) }}
-        run: echo "$OBJ"
+      - name: Try tree
+        run: tree ./
