@@ -11,5 +11,13 @@ jobs:
       - name: Checkout this repo
         uses: actions/checkout@v3
         
-      - name: Try tree
-        run: tree ./
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-region: us-east-1
+          aws-access-key-id: ${{ secrets.GHAP_AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.GHAP_AWS_SECRET_ACCESS_KEY }}
+
+      - name: Sync allure-report folder
+        run: |
+          aws s3 sync ./docs/daily/api/allure-report ${{ secrets.GHAP_S3_BUCKET_URL }}
