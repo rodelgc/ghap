@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 env:
-  E2E_PLAYWRIGHT: false
+  E2E_PLAYWRIGHT: true
 
 jobs:
   job_1:
