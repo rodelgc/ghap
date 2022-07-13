@@ -14,6 +14,10 @@ jobs:
     runs-on: ubuntu-20.04
 
     steps:
-      - name: Is true
+      - name: Run if E2E_PLAYWRIGHT is true
         if: fromJSON(env.E2E_PLAYWRIGHT)
-        run: echo "If you see this, it means that E2E_PLAYWRIGHT was set to 'true'"
+        run: echo "I ran!"
+
+      - name: Run if E2E_PLAYWRIGHT is false
+        if: !fromJSON(env.E2E_PLAYWRIGHT)
+        run: echo "I ran!"
