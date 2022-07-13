@@ -12,3 +12,6 @@ jobs:
     steps:
       - name: Output commit message
         run: echo "${{ github.event.head_commit.message }}"
+
+      - name: Output full event object
+        run: echo "${{ toJSON(github.event) }}"
