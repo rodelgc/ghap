@@ -1,0 +1,17 @@
+name: PR workflow
+on:
+  push:
+    branches:
+      - "test-pr-events"
+  workflow_dispatch:
+
+jobs:
+  job_1:
+    name: Job 1
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Output github.event.head_commit.message
+        run: echo "${{ github.event.head_commit.message }}"
+
+      - name: Output full event object
+        run: echo "${{ toJSON(github.event) }}"
