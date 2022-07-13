@@ -1,0 +1,14 @@
+name: Workflow for workflow-dispatch event
+on:
+  workflow_dispatch:
+
+jobs:
+  job_1:
+    name: Job 1
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Print github object
+        env:
+          OBJECT: ${{ toJSON(github) }}
+        run: echo "$OBJECT"
+        
