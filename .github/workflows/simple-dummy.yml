@@ -5,19 +5,11 @@ on:
       - "trunk"
   workflow_dispatch:
 
-env:
-  E2E_PLAYWRIGHT: false
-
 jobs:
   job_1:
-    name: Archive job summary
+    name: Job 1
     runs-on: ubuntu-20.04
-
     steps:
-      - name: Run if E2E_PLAYWRIGHT is true
-        if: fromJSON(env.E2E_PLAYWRIGHT)
-        run: echo "I ran!"
-
-      - name: Run if E2E_PLAYWRIGHT is false
-        if: fromJSON(env.E2E_PLAYWRIGHT) != true
-        run: echo "I ran!"
+      - name: Output commit message
+        run: echo "${{ github.event.head_commit.message }}"
+"
