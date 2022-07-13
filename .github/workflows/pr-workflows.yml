@@ -10,5 +10,5 @@ jobs:
     steps:
       - name: Output full github object
         env:
-          OBJ: ${{ toJSON(github.event) }}
+          OBJ: ${{ toJSON(github) }}
         run: echo "$OBJ"
